@@ -1,0 +1,201 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "Part_Period",
+					"jsonFile" : "directory-Part_Period-e17bca81aa9f74f00856.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "Part_Period",
+					"targetIndexes" : 
+					[
+						1,
+						4
+					]
+				},
+				{
+					"build" : "Part_HardwareCom",
+					"jsonFile" : "directory-Part_HardwareCom-fc6ec40c401c9f190581.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "Part_HardwareCom",
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"build" : "Part_Robotrunner",
+					"jsonFile" : "directory-Part_Robotrunner-7edbd7ba6b4646e73cd3.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "Part_Robotrunner",
+					"targetIndexes" : 
+					[
+						2,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "code_struct",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Period",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "HardwareCom",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						3
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Robotrunner",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "HardwareCom::@cc2b063093f95bb0c262",
+					"jsonFile" : "target-HardwareCom-a62d27e014b3130ba14a.json",
+					"name" : "HardwareCom",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Period::@8237e40199828236782a",
+					"jsonFile" : "target-Period-7f298cf65b96cd4a80c5.json",
+					"name" : "Period",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "Robotrunner::@b623aefb1bcd059774e7",
+					"jsonFile" : "target-Robotrunner-e402619488c5387aceac.json",
+					"name" : "Robotrunner",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "TestHardware::@cc2b063093f95bb0c262",
+					"jsonFile" : "target-TestHardware-b71354aa9297d977c7f4.json",
+					"name" : "TestHardware",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "TestPeriod::@8237e40199828236782a",
+					"jsonFile" : "target-TestPeriod-94a3129d9620df8a5e25.json",
+					"name" : "TestPeriod",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "TestRobotrunner::@b623aefb1bcd059774e7",
+					"jsonFile" : "target-TestRobotrunner-9cfab81a515649917c2a.json",
+					"name" : "TestRobotrunner",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "code_struct::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-code_struct-648737999aa2b3d77dfd.json",
+					"name" : "code_struct",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build",
+		"source" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

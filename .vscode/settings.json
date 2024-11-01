@@ -1,0 +1,261 @@
+{
+    "files.associations": {
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "chrono": "cpp",
+<<<<<<< HEAD
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "codecvt": "cpp",
+        "compare": "cpp",
+        "complex": "cpp",
+        "concepts": "cpp",
+        "condition_variable": "cpp",
+=======
+=======
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "limits": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+<<<<<<< HEAD
+>>>>>>> 960992c (first_try)
+=======
+        "*.tcc": "cpp",
+        "fstream": "cpp",
+        "limits": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "cctype": "cpp",
+        "charconv": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "condition_variable": "cpp",
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+=======
+        "compare": "cpp",
+        "concepts": "cpp",
+        "condition_variable": "cpp",
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "cstring": "cpp",
+=======
+>>>>>>> 960992c (first_try)
+=======
+        "cstring": "cpp",
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+=======
+        "cstring": "cpp",
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "list": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+=======
+        "list": "cpp",
+        "unordered_map": "cpp",
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+<<<<<<< HEAD
+        "source_location": "cpp",
+=======
+=======
+        "list": "cpp",
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "random": "cpp",
+        "ratio": "cpp",
+<<<<<<< HEAD
+>>>>>>> 960992c (first_try)
+=======
+        "string": "cpp",
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+=======
+        "string": "cpp",
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp",
+        "type_traits": "cpp",
+        "utility": "cpp",
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+        "hash_map": "cpp",
+        "fstream": "cpp",
+=======
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+        "future": "cpp",
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+<<<<<<< HEAD
+        "limits": "cpp",
+=======
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+        "mutex": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+<<<<<<< HEAD
+        "semaphore": "cpp",
+=======
+        "ranges": "cpp",
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+        "shared_mutex": "cpp",
+        "span": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+<<<<<<< HEAD
+        "cinttypes": "cpp",
+        "typeinfo": "cpp",
+        "valarray": "cpp",
+        "variant": "cpp",
+        "format": "cpp",
+        "text_encoding": "cpp"
+=======
+        "fstream": "cpp",
+=======
+        "future": "cpp",
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        "initializer_list": "cpp",
+        "iomanip": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "numbers": "cpp",
+        "ostream": "cpp",
+        "ranges": "cpp",
+        "shared_mutex": "cpp",
+        "span": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "stop_token": "cpp",
+        "streambuf": "cpp",
+        "thread": "cpp",
+        "typeinfo": "cpp",
+<<<<<<< HEAD
+        "iostream": "cpp",
+        "cstring": "cpp",
+        "list": "cpp",
+        "queue": "cpp",
+        "condition_variable": "cpp",
+        "functional": "cpp",
+        "shared_mutex": "cpp",
+        "iterator": "cpp",
+        "future": "cpp",
+        "mutex": "cpp"
+>>>>>>> 960992c (first_try)
+=======
+        "variant": "cpp",
+        "format": "cpp",
+        "semaphore": "cpp",
+        "forward_list": "cpp",
+        "executor": "cpp",
+        "io_context": "cpp",
+        "netfwd": "cpp",
+        "timer": "cpp"
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+    }
+=======
+        "typeinfo": "cpp",
+        "variant": "cpp",
+        "format": "cpp",
+        "semaphore": "cpp",
+        "forward_list": "cpp",
+        "executor": "cpp",
+        "io_context": "cpp",
+        "netfwd": "cpp",
+        "timer": "cpp",
+        "complex": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "text_encoding": "cpp",
+        "cinttypes": "cpp",
+        "codecvt": "cpp",
+        "qpaintevent": "cpp",
+        "qmargins": "cpp",
+        "qtprintsupport": "cpp",
+        "qwidget": "cpp",
+        "qqueue": "cpp",
+        "qthread": "cpp",
+        "*.ui": "cpp",
+        "qapplication": "cpp",
+        "qobject": "cpp",
+        "qopenglcontext": "cpp",
+        "qtnumeric": "cpp",
+        "qmutexlocker": "cpp",
+        "filesystem": "cpp",
+        "source_location": "cpp",
+        "qtprintsupportdepends": "cpp",
+        "qtcore": "cpp",
+        "qtgui": "cpp",
+        "dense": "cpp",
+        "eigenvalues": "cpp",
+        "geometry": "cpp",
+        "unordered_set": "cpp",
+        "hash_map": "cpp",
+        "valarray": "cpp"
+    },
+    "qtConfigure.qtKitDir": "/home/roma/Qt/6.2.4/gcc_64"
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+}

@@ -11,7 +11,6 @@ set(CMAKE_C_FLAGS_DEBUG "-g")    # 为 Debug 类型设置 -g（生成调试信�
 set(CMAKE_CXX_FLAGS_RELEASE "-O2") # 为 Release 类型设置 -O2 优化
 set(CMAKE_CXX_FLAGS_DEBUG "-g")    # 为 Debug 类型设置 -g（生成调试信息），不设置优化
 
-<<<<<<< HEAD
 #分批编译子文件
 add_subdirectory(Part_Period)
 add_subdirectory(Part_HardwareCom)
@@ -36,7 +35,7 @@ message("Qt6 PrintSupport package found at: ${Qt6PrintSupport_DIR}")
 pkg_check_modules(libevdev REQUIRED libevdev)
 
 # 生成可执行文件
-add_executable(code_struct main.cpp Ctr_Hexpod.hpp)
+add_executable(code_struct main.cpp Ctr_Hexpod.hpp Hex_gait.hpp)
 
 #导入头文件索引
 include_directories(./Part_Robotrunner/include)
@@ -68,9 +67,3 @@ target_link_libraries(code_struct PRIVATE pthread)
 target_link_libraries(code_struct PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/lib/libRealtimeCurvePlot.so)
 
 set_target_properties(code_struct PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build/bin)
-=======
-
-add_subdirectory(Period)
-add_subdirectory(HardwareCom)
-add_subdirectory(Robotrunner)
->>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)

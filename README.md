@@ -83,3 +83,8 @@ sudo ln -s /usr/local/include/opencv4/opencv2/ usr/local/include
 # code_struct_linux_slj
 rm -rf ./*
 >>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+
+
+11.5 
+在class RobotRunner中修改 PeriodicTask(0.0015,"robotrunner",100,sched_get_priority_max(SCHED_FIFO),SCHED_FIFO) 的第一个参数就可以修改fps
+具体计算为x=1/fps

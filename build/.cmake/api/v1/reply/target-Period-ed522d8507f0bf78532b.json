@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib/libPeriod.so"
+			"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib/libPeriod.so"
 		}
 	],
 	"backtrace" : 1,
@@ -49,7 +49,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fPIC"
+					"fragment" : "-fPIC"
 				},
 				{
 					"fragment" : "-std=gnu++20"
@@ -65,7 +65,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Period/./include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Period/./include"
 				}
 			],
 			"language" : "CXX",

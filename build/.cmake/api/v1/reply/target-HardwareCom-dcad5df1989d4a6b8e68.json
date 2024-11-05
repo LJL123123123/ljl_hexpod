@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib/libHardwareCom.so"
+			"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib/libHardwareCom.so"
 		}
 	],
 	"backtrace" : 1,
@@ -67,7 +67,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fPIC"
+					"fragment" : "-fPIC"
 				},
 				{
 					"fragment" : "-std=gnu++20"
@@ -83,19 +83,19 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom/./include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/./include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom/../Part_Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../Part_Period/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom/../data_struct"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../data_struct"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom/../motor"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../motor"
 				}
 			],
 			"language" : "CXX",
@@ -131,7 +131,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib",
+				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib",
 				"role" : "libraries"
 			},
 			{

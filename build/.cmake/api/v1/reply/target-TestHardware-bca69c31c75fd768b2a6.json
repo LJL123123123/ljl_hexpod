@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib/libRobotrunner.so"
+			"path" : "bin/TestHardware"
 		}
 	],
 	"backtrace" : 1,
@@ -10,13 +10,13 @@
 	{
 		"commands" : 
 		[
-			"add_library",
+			"add_executable",
 			"target_link_libraries",
 			"include_directories"
 		],
 		"files" : 
 		[
-			"Part_Robotrunner/CMakeLists.txt"
+			"Part_HardwareCom/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -26,19 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 13,
+				"line" : 21,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
-				"command" : 2,
+				"command" : 1,
 				"file" : 0,
-				"line" : 6,
+				"line" : 23,
 				"parent" : 0
 			},
 			{
@@ -62,13 +62,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 21,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 22,
+				"line" : 20,
 				"parent" : 0
 			}
 		]
@@ -79,43 +73,26 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -fPIC"
-				},
-				{
 					"fragment" : "-std=gnu++20"
-				}
-			],
-			"defines" : 
-			[
-				{
-					"define" : "Robotrunner_EXPORTS"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 3,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Part_HardwareCom/include"
-				},
-				{
 					"backtrace" : 4,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Part_Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/./include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../data_struct"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../Part_Period/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/./include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../data_struct"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../HardwareCom/include"
-				},
-				{
-					"backtrace" : 8,
-					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom/../motor"
 				}
 			],
 			"language" : "CXX",
@@ -129,12 +106,22 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "Robotrunner::@b623aefb1bcd059774e7",
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 3,
+			"id" : "Period::@8237e40199828236782a"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "HardwareCom::@cc2b063093f95bb0c262"
+		}
+	],
+	"id" : "TestHardware::@cc2b063093f95bb0c262",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -144,19 +131,32 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
+				"fragment" : "../../lib/libHardwareCom.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../lib/libPeriod.so",
+				"role" : "libraries"
+			},
+			{
 				"fragment" : "-lpthread",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "Robotrunner",
-	"nameOnDisk" : "libRobotrunner.so",
+	"name" : "TestHardware",
+	"nameOnDisk" : "TestHardware",
 	"paths" : 
 	{
-		"build" : "Part_Robotrunner",
-		"source" : "Part_Robotrunner"
+		"build" : "Part_HardwareCom",
+		"source" : "Part_HardwareCom"
 	},
 	"sourceGroups" : 
 	[
@@ -164,8 +164,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
@@ -174,15 +173,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Part_Robotrunner/src/RobotRunner.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Part_Robotrunner/src/IrisTac.cpp",
+			"path" : "Part_HardwareCom/test/test.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "SHARED_LIBRARY"
+	"type" : "EXECUTABLE"
 }

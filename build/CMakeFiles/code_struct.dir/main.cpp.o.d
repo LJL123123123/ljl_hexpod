@@ -1,6 +1,7 @@
 CMakeFiles/code_struct.dir/main.cpp.o: \
- /home/dragon/桌面/bishe/hexpod_ljl/main.cpp /usr/include/stdc-predef.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Period/include/Timer.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/main.cpp \
+ /usr/include/stdc-predef.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Period/include/Timer.h \
  /usr/include/assert.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -9,8 +10,7 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/stdint.h \
- /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
@@ -18,7 +18,7 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h /usr/include/time.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
@@ -33,85 +33,61 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /home/dragon/桌面/bishe/hexpod_ljl/IrisTac_Project.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/Ctr_Hexpod.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Robotrunner/include/RobotRunner.hpp \
- /usr/local/include/c++/14.2.0/string \
- /usr/local/include/c++/14.2.0/bits/requires_hosted.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/local/include/c++/14.2.0/pstl/pstl_config.h \
- /usr/local/include/c++/14.2.0/bits/stringfwd.h \
- /usr/local/include/c++/14.2.0/bits/memoryfwd.h \
- /usr/local/include/c++/14.2.0/bits/char_traits.h \
- /usr/local/include/c++/14.2.0/bits/postypes.h \
- /usr/local/include/c++/14.2.0/cwchar /usr/include/wchar.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include-fixed/x86_64-linux-gnu/bits/floatn.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include-fixed/x86_64-linux-gnu/bits/floatn-common.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/stdarg.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/IrisTac_Project.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Ctr_Hexpod.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Robotrunner/include/RobotRunner.hpp \
+ /usr/include/c++/11/string \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+ /usr/include/c++/11/pstl/pstl_config.h \
+ /usr/include/c++/11/bits/stringfwd.h \
+ /usr/include/c++/11/bits/memoryfwd.h \
+ /usr/include/c++/11/bits/char_traits.h \
+ /usr/include/c++/11/bits/stl_algobase.h \
+ /usr/include/c++/11/bits/functexcept.h \
+ /usr/include/c++/11/bits/exception_defines.h \
+ /usr/include/c++/11/bits/cpp_type_traits.h \
+ /usr/include/c++/11/ext/type_traits.h \
+ /usr/include/c++/11/ext/numeric_traits.h \
+ /usr/include/c++/11/bits/stl_pair.h /usr/include/c++/11/bits/move.h \
+ /usr/include/c++/11/type_traits /usr/include/c++/11/compare \
+ /usr/include/c++/11/concepts \
+ /usr/include/c++/11/bits/stl_iterator_base_types.h \
+ /usr/include/c++/11/bits/iterator_concepts.h \
+ /usr/include/c++/11/bits/ptr_traits.h \
+ /usr/include/c++/11/bits/ranges_cmp.h \
+ /usr/include/c++/11/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/11/bits/concept_check.h \
+ /usr/include/c++/11/debug/assertions.h \
+ /usr/include/c++/11/bits/stl_iterator.h /usr/include/c++/11/new \
+ /usr/include/c++/11/bits/exception.h \
+ /usr/include/c++/11/bits/stl_construct.h \
+ /usr/include/c++/11/debug/debug.h \
+ /usr/include/c++/11/bits/predefined_ops.h \
+ /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
+ /usr/include/wchar.h /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/local/include/c++/14.2.0/type_traits \
- /usr/local/include/c++/14.2.0/bits/version.h \
- /usr/local/include/c++/14.2.0/compare \
- /usr/local/include/c++/14.2.0/concepts \
- /usr/local/include/c++/14.2.0/bits/stl_construct.h \
- /usr/local/include/c++/14.2.0/new \
- /usr/local/include/c++/14.2.0/bits/exception.h \
- /usr/local/include/c++/14.2.0/bits/move.h \
- /usr/local/include/c++/14.2.0/bits/stl_iterator_base_types.h \
- /usr/local/include/c++/14.2.0/bits/iterator_concepts.h \
- /usr/local/include/c++/14.2.0/bits/ptr_traits.h \
- /usr/local/include/c++/14.2.0/bits/ranges_cmp.h \
- /usr/local/include/c++/14.2.0/bits/stl_iterator_base_funcs.h \
- /usr/local/include/c++/14.2.0/bits/concept_check.h \
- /usr/local/include/c++/14.2.0/debug/assertions.h \
- /usr/local/include/c++/14.2.0/bits/allocator.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/local/include/c++/14.2.0/bits/new_allocator.h \
- /usr/local/include/c++/14.2.0/bits/functexcept.h \
- /usr/local/include/c++/14.2.0/bits/exception_defines.h \
- /usr/local/include/c++/14.2.0/bits/cpp_type_traits.h \
- /usr/local/include/c++/14.2.0/bits/localefwd.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/c++locale.h \
- /usr/local/include/c++/14.2.0/clocale /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h \
- /usr/local/include/c++/14.2.0/iosfwd \
- /usr/local/include/c++/14.2.0/cctype /usr/include/ctype.h \
- /usr/local/include/c++/14.2.0/bits/ostream_insert.h \
- /usr/local/include/c++/14.2.0/bits/cxxabi_forced.h \
- /usr/local/include/c++/14.2.0/bits/stl_iterator.h \
- /usr/local/include/c++/14.2.0/ext/type_traits.h \
- /usr/local/include/c++/14.2.0/bits/stl_function.h \
- /usr/local/include/c++/14.2.0/backward/binders.h \
- /usr/local/include/c++/14.2.0/ext/numeric_traits.h \
- /usr/local/include/c++/14.2.0/bits/stl_algobase.h \
- /usr/local/include/c++/14.2.0/bits/stl_pair.h \
- /usr/local/include/c++/14.2.0/bits/utility.h \
- /usr/local/include/c++/14.2.0/debug/debug.h \
- /usr/local/include/c++/14.2.0/bits/predefined_ops.h \
- /usr/local/include/c++/14.2.0/bit \
- /usr/local/include/c++/14.2.0/bits/refwrap.h \
- /usr/local/include/c++/14.2.0/bits/invoke.h \
- /usr/local/include/c++/14.2.0/bits/range_access.h \
- /usr/local/include/c++/14.2.0/initializer_list \
- /usr/local/include/c++/14.2.0/bits/basic_string.h \
- /usr/local/include/c++/14.2.0/ext/alloc_traits.h \
- /usr/local/include/c++/14.2.0/bits/alloc_traits.h \
- /usr/local/include/c++/14.2.0/string_view \
- /usr/local/include/c++/14.2.0/bits/functional_hash.h \
- /usr/local/include/c++/14.2.0/bits/hash_bytes.h \
- /usr/local/include/c++/14.2.0/bits/ranges_base.h \
- /usr/local/include/c++/14.2.0/bits/max_size_type.h \
- /usr/local/include/c++/14.2.0/numbers \
- /usr/local/include/c++/14.2.0/bits/string_view.tcc \
- /usr/local/include/c++/14.2.0/ext/string_conversions.h \
- /usr/local/include/c++/14.2.0/cstdlib /usr/include/stdlib.h \
- /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/c++/11/cstdint /usr/include/c++/11/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+ /usr/include/c++/11/ext/new_allocator.h \
+ /usr/include/c++/11/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+ /usr/include/c++/11/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/11/iosfwd \
+ /usr/include/c++/11/cctype /usr/include/ctype.h \
+ /usr/include/c++/11/bits/ostream_insert.h \
+ /usr/include/c++/11/bits/cxxabi_forced.h \
+ /usr/include/c++/11/bits/stl_function.h \
+ /usr/include/c++/11/backward/binders.h \
+ /usr/include/c++/11/bits/stl_algo.h /usr/include/c++/11/cstdlib \
+ /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
@@ -127,59 +103,67 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/local/include/c++/14.2.0/bits/std_abs.h \
- /usr/local/include/c++/14.2.0/cstdio /usr/include/stdio.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
- /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
- /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
- /usr/local/include/c++/14.2.0/cerrno /usr/include/errno.h \
- /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
- /usr/include/x86_64-linux-gnu/asm/errno.h \
- /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
- /usr/local/include/c++/14.2.0/bits/charconv.h \
- /usr/local/include/c++/14.2.0/bits/basic_string.tcc \
- /usr/local/include/c++/14.2.0/bits/memory_resource.h \
- /usr/local/include/c++/14.2.0/cstddef \
- /usr/local/include/c++/14.2.0/bits/uses_allocator.h \
- /usr/local/include/c++/14.2.0/bits/uses_allocator_args.h \
- /usr/local/include/c++/14.2.0/tuple \
- /usr/local/include/c++/14.2.0/bits/ranges_util.h \
- /usr/local/include/c++/14.2.0/unordered_map \
- /usr/local/include/c++/14.2.0/bits/unordered_map.h \
- /usr/local/include/c++/14.2.0/bits/hashtable.h \
- /usr/local/include/c++/14.2.0/bits/hashtable_policy.h \
- /usr/local/include/c++/14.2.0/ext/aligned_buffer.h \
- /usr/local/include/c++/14.2.0/bits/enable_special_members.h \
- /usr/local/include/c++/14.2.0/bits/node_handle.h \
- /usr/local/include/c++/14.2.0/bits/erase_if.h \
- /usr/local/include/c++/14.2.0/vector \
- /usr/local/include/c++/14.2.0/bits/stl_uninitialized.h \
- /usr/local/include/c++/14.2.0/bits/stl_vector.h \
- /usr/local/include/c++/14.2.0/bits/stl_bvector.h \
- /usr/local/include/c++/14.2.0/bits/vector.tcc \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Period/include/PeriodicTask.hpp \
- /usr/local/include/c++/14.2.0/thread \
- /usr/local/include/c++/14.2.0/stop_token \
- /usr/local/include/c++/14.2.0/atomic \
- /usr/local/include/c++/14.2.0/bits/atomic_base.h \
- /usr/local/include/c++/14.2.0/bits/atomic_lockfree_defines.h \
- /usr/local/include/c++/14.2.0/bits/atomic_wait.h \
- /usr/local/include/c++/14.2.0/cstdint \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/gthr.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/gthr-default.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include-fixed/pthread.h \
- /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/c++/11/bits/std_abs.h \
+ /usr/include/c++/11/bits/algorithmfwd.h \
+ /usr/include/c++/11/initializer_list /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
+ /usr/include/c++/11/bits/uniform_int_dist.h \
+ /usr/include/c++/11/bits/range_access.h \
+ /usr/include/c++/11/bits/basic_string.h \
+ /usr/include/c++/11/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /usr/local/include/c++/14.2.0/climits \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/limits.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/syslimits.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+ /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+ /usr/include/c++/11/ext/alloc_traits.h \
+ /usr/include/c++/11/bits/alloc_traits.h /usr/include/c++/11/string_view \
+ /usr/include/c++/11/bits/functional_hash.h \
+ /usr/include/c++/11/bits/hash_bytes.h \
+ /usr/include/c++/11/bits/ranges_base.h \
+ /usr/include/c++/11/bits/max_size_type.h /usr/include/c++/11/numbers \
+ /usr/include/c++/11/bits/string_view.tcc \
+ /usr/include/c++/11/ext/string_conversions.h /usr/include/c++/11/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/c++/11/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+ /usr/include/c++/11/bits/charconv.h \
+ /usr/include/c++/11/bits/basic_string.tcc \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/bits/hashtable_policy.h /usr/include/c++/11/tuple \
+ /usr/include/c++/11/utility /usr/include/c++/11/bits/stl_relops.h \
+ /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h \
+ /usr/include/c++/11/bits/enable_special_members.h \
+ /usr/include/c++/11/bits/node_handle.h \
+ /usr/include/c++/11/bits/unordered_map.h \
+ /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
+ /usr/include/c++/11/bits/stl_vector.h \
+ /usr/include/c++/11/bits/stl_bvector.h \
+ /usr/include/c++/11/bits/vector.tcc \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Period/include/PeriodicTask.hpp \
+ /usr/include/c++/11/thread /usr/include/c++/11/stop_token \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/11/bits/atomic_wait.h /usr/include/c++/11/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
  /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h \
@@ -197,93 +181,56 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/asm/unistd.h \
  /usr/include/x86_64-linux-gnu/asm/unistd_64.h \
  /usr/include/x86_64-linux-gnu/bits/syscall.h \
- /usr/local/include/c++/14.2.0/bits/std_mutex.h \
- /usr/local/include/c++/14.2.0/bits/std_thread.h \
- /usr/local/include/c++/14.2.0/bits/unique_ptr.h \
- /usr/local/include/c++/14.2.0/ostream /usr/local/include/c++/14.2.0/ios \
- /usr/local/include/c++/14.2.0/exception \
- /usr/local/include/c++/14.2.0/bits/exception_ptr.h \
- /usr/local/include/c++/14.2.0/bits/cxxabi_init_exception.h \
- /usr/local/include/c++/14.2.0/typeinfo \
- /usr/local/include/c++/14.2.0/bits/nested_exception.h \
- /usr/local/include/c++/14.2.0/bits/ios_base.h \
- /usr/local/include/c++/14.2.0/ext/atomicity.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/atomic_word.h \
- /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
- /usr/local/include/c++/14.2.0/bits/locale_classes.h \
- /usr/local/include/c++/14.2.0/bits/locale_classes.tcc \
- /usr/local/include/c++/14.2.0/system_error \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/error_constants.h \
- /usr/local/include/c++/14.2.0/stdexcept \
- /usr/local/include/c++/14.2.0/streambuf \
- /usr/local/include/c++/14.2.0/bits/streambuf.tcc \
- /usr/local/include/c++/14.2.0/bits/basic_ios.h \
- /usr/local/include/c++/14.2.0/bits/locale_facets.h \
- /usr/local/include/c++/14.2.0/cwctype /usr/include/wctype.h \
- /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/ctype_base.h \
- /usr/local/include/c++/14.2.0/bits/streambuf_iterator.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
- /usr/local/include/c++/14.2.0/bits/locale_facets.tcc \
- /usr/local/include/c++/14.2.0/bits/basic_ios.tcc \
- /usr/local/include/c++/14.2.0/bits/ostream.tcc \
- /usr/local/include/c++/14.2.0/semaphore \
- /usr/local/include/c++/14.2.0/bits/semaphore_base.h \
- /usr/local/include/c++/14.2.0/bits/chrono.h \
- /usr/local/include/c++/14.2.0/ratio /usr/local/include/c++/14.2.0/limits \
- /usr/local/include/c++/14.2.0/ctime \
- /usr/local/include/c++/14.2.0/bits/parse_numbers.h \
- /usr/local/include/c++/14.2.0/bits/atomic_timed_wait.h \
- /usr/local/include/c++/14.2.0/bits/this_thread_sleep.h \
+ /usr/include/c++/11/bits/std_mutex.h /usr/include/c++/11/system_error \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+ /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
+ /usr/include/c++/11/bits/exception_ptr.h \
+ /usr/include/c++/11/bits/cxxabi_init_exception.h \
+ /usr/include/c++/11/typeinfo /usr/include/c++/11/bits/nested_exception.h \
+ /usr/include/c++/11/bits/std_thread.h /usr/include/c++/11/bits/refwrap.h \
+ /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/ostream \
+ /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
+ /usr/include/c++/11/bits/locale_classes.h \
+ /usr/include/c++/11/bits/locale_classes.tcc \
+ /usr/include/c++/11/streambuf /usr/include/c++/11/bits/streambuf.tcc \
+ /usr/include/c++/11/bits/basic_ios.h \
+ /usr/include/c++/11/bits/locale_facets.h /usr/include/c++/11/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+ /usr/include/c++/11/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+ /usr/include/c++/11/bits/locale_facets.tcc \
+ /usr/include/c++/11/bits/basic_ios.tcc \
+ /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/semaphore \
+ /usr/include/c++/11/bits/semaphore_base.h \
+ /usr/include/c++/11/bits/atomic_timed_wait.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/c++/11/chrono \
+ /usr/include/c++/11/ratio /usr/include/c++/11/limits \
+ /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
  /usr/include/x86_64-linux-gnu/bits/semaphore.h \
- /usr/local/include/c++/14.2.0/iostream \
- /usr/local/include/c++/14.2.0/istream \
- /usr/local/include/c++/14.2.0/bits/istream.tcc \
- /usr/local/include/c++/14.2.0/chrono \
- /usr/local/include/c++/14.2.0/sstream \
- /usr/local/include/c++/14.2.0/bits/sstream.tcc \
- /usr/local/include/c++/14.2.0/bits/stl_algo.h \
- /usr/local/include/c++/14.2.0/bits/algorithmfwd.h \
- /usr/local/include/c++/14.2.0/bits/stl_heap.h \
- /usr/local/include/c++/14.2.0/bits/uniform_int_dist.h \
- /usr/local/include/c++/14.2.0/bits/stl_tempbuf.h \
- /usr/local/include/c++/14.2.0/bits/shared_ptr.h \
- /usr/local/include/c++/14.2.0/bits/shared_ptr_base.h \
- /usr/local/include/c++/14.2.0/bits/allocated_ptr.h \
- /usr/local/include/c++/14.2.0/ext/concurrence.h \
- /usr/local/include/c++/14.2.0/bits/align.h \
- /usr/local/include/c++/14.2.0/bits/chrono_io.h \
- /usr/local/include/c++/14.2.0/iomanip \
- /usr/local/include/c++/14.2.0/locale \
- /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/time_members.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/messages_members.h \
- /usr/include/libintl.h /usr/local/include/c++/14.2.0/bits/codecvt.h \
- /usr/local/include/c++/14.2.0/bits/locale_facets_nonio.tcc \
- /usr/local/include/c++/14.2.0/bits/locale_conv.h \
- /usr/local/include/c++/14.2.0/bits/quoted_string.h \
- /usr/local/include/c++/14.2.0/format /usr/local/include/c++/14.2.0/array \
- /usr/local/include/c++/14.2.0/charconv \
- /usr/local/include/c++/14.2.0/optional \
- /usr/local/include/c++/14.2.0/span /usr/local/include/c++/14.2.0/variant \
- /usr/local/include/c++/14.2.0/bits/ranges_algobase.h \
- /usr/local/include/c++/14.2.0/bits/unicode.h \
- /usr/local/include/c++/14.2.0/bits/unicode-data.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Robotrunner/include/DMmotor.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Robotrunner/include/Motor.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Robotrunner/include/RobotRunner.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_HardwareCom/include/DM_USB2CAN.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_HardwareCom/include/UartCommunication.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./data_struct/CircularQueue.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_HardwareCom/include/Msg.hpp \
- /usr/local/include/c++/14.2.0/shared_mutex \
- /usr/local/include/c++/14.2.0/mutex \
- /usr/local/include/c++/14.2.0/bits/unique_lock.h \
- /usr/local/include/c++/14.2.0/cstring /usr/include/string.h \
- /usr/include/strings.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./data_struct/Math_Tool.hpp \
- /usr/local/include/c++/14.2.0/cmath /usr/include/math.h \
+ /usr/include/c++/11/iostream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Robotrunner/include/DMmotor.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Robotrunner/include/Motor.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Robotrunner/include/RobotRunner.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_HardwareCom/include/DM_USB2CAN.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_HardwareCom/include/UartCommunication.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./data_struct/CircularQueue.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_HardwareCom/include/Msg.hpp \
+ /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/quoted_string.h /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc /usr/include/c++/11/shared_mutex \
+ /usr/include/c++/11/mutex /usr/include/c++/11/bits/unique_lock.h \
+ /usr/include/c++/11/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./data_struct/Math_Tool.hpp \
+ /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
@@ -293,219 +240,218 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/local/include/c++/14.2.0/bits/specfun.h \
- /usr/local/include/c++/14.2.0/tr1/gamma.tcc \
- /usr/local/include/c++/14.2.0/tr1/special_function_util.h \
- /usr/local/include/c++/14.2.0/tr1/bessel_function.tcc \
- /usr/local/include/c++/14.2.0/tr1/beta_function.tcc \
- /usr/local/include/c++/14.2.0/tr1/ell_integral.tcc \
- /usr/local/include/c++/14.2.0/tr1/exp_integral.tcc \
- /usr/local/include/c++/14.2.0/tr1/hypergeometric.tcc \
- /usr/local/include/c++/14.2.0/tr1/legendre_function.tcc \
- /usr/local/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
- /usr/local/include/c++/14.2.0/tr1/poly_hermite.tcc \
- /usr/local/include/c++/14.2.0/tr1/poly_laguerre.tcc \
- /usr/local/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Dense \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Core \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/DisableStupidWarnings.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/Macros.h \
- /usr/local/include/c++/14.2.0/complex \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/MKL_support.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/mmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/emmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xmmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/mm_malloc.h \
- /usr/local/include/c++/14.2.0/stdlib.h \
- /usr/local/include/c++/14.2.0/cassert \
- /usr/local/include/c++/14.2.0/functional \
- /usr/local/include/c++/14.2.0/bits/std_function.h \
- /usr/local/include/c++/14.2.0/algorithm \
- /usr/local/include/c++/14.2.0/bits/ranges_algo.h \
- /usr/local/include/c++/14.2.0/pstl/glue_algorithm_defs.h \
- /usr/local/include/c++/14.2.0/pstl/execution_defs.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/Constants.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/Meta.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/ForwardDeclarations.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/StaticAssert.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/XprHelper.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/Memory.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/IntegralConstant.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/SymbolicIndex.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/NumTraits.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/MathFunctions.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/GenericPacketMath.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/MathFunctionsImpl.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/Default/ConjHelper.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/SSE/PacketMath.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/SSE/MathFunctions.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/SSE/Complex.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/CUDA/Half.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/CUDA/TypeCasting.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/Default/Settings.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/TernaryFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/BinaryFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/UnaryFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/NullaryFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/StlFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/functors/AssignmentFunctors.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/arch/CUDA/Complex.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/IndexedViewHelper.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ArithmeticSequence.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/IO.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/DenseCoeffsBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/DenseBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/BlockMethods.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/MatrixBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/EigenBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Product.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CoreEvaluators.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/AssignEvaluator.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Assign.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ArrayBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/BlasUtil.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/DenseStorage.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/NestByValue.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ReturnByValue.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/NoAlias.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/PlainObjectBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Matrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Array.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CwiseTernaryOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CwiseBinaryOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CwiseUnaryOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CwiseNullaryOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CwiseUnaryView.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/SelfCwiseBinaryOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Dot.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/StableNorm.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Stride.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/MapBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Map.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Ref.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Block.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/VectorBlock.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/IndexedView.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Transpose.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/DiagonalMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Diagonal.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/DiagonalProduct.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Redux.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Visitor.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Fuzzy.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Swap.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CommaInitializer.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/GeneralProduct.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Solve.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Inverse.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/SolverBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/PermutationMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Transpositions.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/TriangularMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/SelfAdjointView.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/Parallelizer.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ProductEvaluators.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/GeneralMatrixVector.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/GeneralMatrixMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/SolveTriangular.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/SelfadjointMatrixVector.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/SelfadjointProduct.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/SelfadjointRank2Update.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/TriangularMatrixVector.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/TriangularMatrixMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/TriangularSolverMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/products/TriangularSolverVector.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/BandMatrix.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/CoreIterators.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ConditionEstimator.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/BooleanRedux.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Select.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/VectorwiseOp.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Random.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Replicate.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/Reverse.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/ArrayWrapper.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/GlobalFunctions.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/LU \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/misc/Kernel.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/misc/Image.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/LU/FullPivLU.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/LU/PartialPivLU.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/LU/Determinant.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/LU/InverseImpl.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/LU/arch/Inverse_SSE.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Cholesky \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Jacobi \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Jacobi/Jacobi.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Cholesky/LLT.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Cholesky/LDLT.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/QR \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Householder \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Householder/Householder.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Householder/HouseholderSequence.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Householder/BlockHouseholder.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/QR/HouseholderQR.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/QR/FullPivHouseholderQR.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/QR/ColPivHouseholderQR.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/SVD \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/misc/RealSvd2x2.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/SVD/UpperBidiagonalization.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/SVD/SVDBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/SVD/JacobiSVD.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/SVD/BDCSVD.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Geometry \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/OrthoMethods.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/EulerAngles.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Homogeneous.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/RotationBase.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Rotation2D.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Quaternion.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/AngleAxis.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Transform.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Translation.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Scaling.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Hyperplane.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/ParametrizedLine.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/AlignedBox.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/Umeyama.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Geometry/arch/Geometry_SSE.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/Eigenvalues \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/Tridiagonalization.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/RealSchur.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/EigenSolver.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/./RealSchur.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/./Tridiagonalization.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/ComplexSchur.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/./ComplexSchur.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/RealQZ.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/./RealQZ.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./include/user.h \
- /home/dragon/桌面/bishe/hexpod_ljl/Hex_gait.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/Ctr_IrisTacController.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/./Part_Robotrunner/include/IrisTac.hpp \
- /home/dragon/桌面/bishe/hexpod_ljl/KeyboardReader.hpp \
+ /usr/include/c++/11/bits/specfun.h /usr/include/c++/11/tr1/gamma.tcc \
+ /usr/include/c++/11/tr1/special_function_util.h \
+ /usr/include/c++/11/tr1/bessel_function.tcc \
+ /usr/include/c++/11/tr1/beta_function.tcc \
+ /usr/include/c++/11/tr1/ell_integral.tcc \
+ /usr/include/c++/11/tr1/exp_integral.tcc \
+ /usr/include/c++/11/tr1/hypergeometric.tcc \
+ /usr/include/c++/11/tr1/legendre_function.tcc \
+ /usr/include/c++/11/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/11/tr1/poly_hermite.tcc \
+ /usr/include/c++/11/tr1/poly_laguerre.tcc \
+ /usr/include/c++/11/tr1/riemann_zeta.tcc \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Dense \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Core \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/Macros.h \
+ /usr/include/c++/11/complex \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/MKL_support.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mm_malloc.h \
+ /usr/include/c++/11/stdlib.h /usr/include/c++/11/cstddef \
+ /usr/include/c++/11/cassert /usr/include/c++/11/functional \
+ /usr/include/c++/11/bits/std_function.h /usr/include/c++/11/algorithm \
+ /usr/include/c++/11/bits/ranges_algo.h \
+ /usr/include/c++/11/bits/ranges_algobase.h /usr/include/c++/11/iterator \
+ /usr/include/c++/11/bits/stream_iterator.h \
+ /usr/include/c++/11/bits/ranges_util.h \
+ /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/Constants.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/Meta.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/ForwardDeclarations.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/StaticAssert.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/XprHelper.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/Memory.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/IntegralConstant.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/SymbolicIndex.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/NumTraits.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/MathFunctions.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/GenericPacketMath.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/MathFunctionsImpl.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/SSE/Complex.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/CUDA/Half.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/CUDA/PacketMathHalf.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/CUDA/TypeCasting.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/Default/Settings.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/TernaryFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/BinaryFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/UnaryFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/NullaryFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/StlFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/arch/CUDA/Complex.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/IndexedViewHelper.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ArithmeticSequence.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/IO.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/DenseCoeffsBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/DenseBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/BlockMethods.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/MatrixBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/EigenBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Product.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CoreEvaluators.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/AssignEvaluator.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Assign.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ArrayBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/BlasUtil.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/DenseStorage.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/NestByValue.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ReturnByValue.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/NoAlias.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/PlainObjectBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Matrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Array.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CwiseTernaryOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CwiseBinaryOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CwiseUnaryOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CwiseNullaryOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CwiseUnaryView.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Dot.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/StableNorm.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Stride.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/MapBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Map.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Ref.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Block.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/VectorBlock.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/IndexedView.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Transpose.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/DiagonalMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Diagonal.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/DiagonalProduct.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Redux.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Visitor.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Fuzzy.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Swap.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CommaInitializer.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/GeneralProduct.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Solve.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Inverse.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/SolverBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/PermutationMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Transpositions.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/TriangularMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/SelfAdjointView.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/Parallelizer.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ProductEvaluators.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/SolveTriangular.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/SelfadjointProduct.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/products/TriangularSolverVector.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/BandMatrix.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/CoreIterators.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ConditionEstimator.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/BooleanRedux.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Select.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/VectorwiseOp.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Random.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Replicate.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/Reverse.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/ArrayWrapper.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/GlobalFunctions.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/LU \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/misc/Kernel.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/misc/Image.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/LU/FullPivLU.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/LU/PartialPivLU.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/LU/Determinant.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/LU/InverseImpl.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/LU/arch/Inverse_SSE.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Cholesky \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Jacobi \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Jacobi/Jacobi.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Cholesky/LLT.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Cholesky/LDLT.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/QR \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Householder \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Householder/Householder.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Householder/HouseholderSequence.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Householder/BlockHouseholder.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/QR/HouseholderQR.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/QR/FullPivHouseholderQR.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/QR/ColPivHouseholderQR.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/SVD \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/misc/RealSvd2x2.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/SVD/UpperBidiagonalization.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/SVD/SVDBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/SVD/JacobiSVD.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/SVD/BDCSVD.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Geometry \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/OrthoMethods.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/EulerAngles.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Homogeneous.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/RotationBase.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Rotation2D.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Quaternion.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/AngleAxis.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Transform.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Translation.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Scaling.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Hyperplane.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/ParametrizedLine.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/AlignedBox.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/Umeyama.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Geometry/arch/Geometry_SSE.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/Eigenvalues \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/RealSchur.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/EigenSolver.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/./RealSchur.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/./Tridiagonalization.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/./ComplexSchur.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/RealQZ.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/./RealQZ.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./include/user.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/Ctr_IrisTacController.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./Part_Robotrunner/include/IrisTac.hpp \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/KeyboardReader.hpp \
  /usr/include/fcntl.h /usr/include/x86_64-linux-gnu/bits/fcntl.h \
  /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
@@ -531,14 +477,12 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /usr/include/libevdev-1.0/libevdev/libevdev.h /usr/include/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent.h \
  /usr/include/x86_64-linux-gnu/bits/dirent_ext.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./include/user.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./include/user.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/QApplication \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/qapplication.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/qtwidgetsglobal.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qtguiglobal.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qglobal.h \
- /usr/local/include/c++/14.2.0/utility \
- /usr/local/include/c++/14.2.0/bits/stl_relops.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qconfig.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qtcore-config.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsystemdetection.h \
@@ -546,6 +490,7 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qcompilerdetection.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qtypeinfo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qcontainerfwd.h \
+ /usr/include/c++/11/variant /usr/include/c++/11/optional \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsysinfo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qlogging.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qflags.h \
@@ -571,14 +516,18 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qarraydatapointer.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qarraydataops.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qcontainertools_impl.h \
- /usr/local/include/c++/14.2.0/iterator \
- /usr/local/include/c++/14.2.0/bits/stream_iterator.h \
- /usr/local/include/c++/14.2.0/memory \
- /usr/local/include/c++/14.2.0/bits/stl_raw_storage_iter.h \
- /usr/local/include/c++/14.2.0/bits/shared_ptr_atomic.h \
- /usr/local/include/c++/14.2.0/backward/auto_ptr.h \
- /usr/local/include/c++/14.2.0/bits/ranges_uninitialized.h \
- /usr/local/include/c++/14.2.0/pstl/glue_memory_defs.h \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/bits/ranges_uninitialized.h \
+ /usr/include/c++/11/bits/uses_allocator_args.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qbytearrayalgorithms.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qbytearrayview.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qstringliteral.h \
@@ -593,9 +542,8 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qobject.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qlist.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qhashfunctions.h \
- /usr/local/include/c++/14.2.0/numeric \
- /usr/local/include/c++/14.2.0/bits/stl_numeric.h \
- /usr/local/include/c++/14.2.0/pstl/glue_numeric_defs.h \
+ /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qiterator.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qbytearraylist.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qstringlist.h \
@@ -613,13 +561,10 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qcontainerinfo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qtaggedpointer.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qmath.h \
- /usr/local/include/c++/14.2.0/list \
- /usr/local/include/c++/14.2.0/bits/stl_list.h \
- /usr/local/include/c++/14.2.0/bits/list.tcc \
- /usr/local/include/c++/14.2.0/map \
- /usr/local/include/c++/14.2.0/bits/stl_tree.h \
- /usr/local/include/c++/14.2.0/bits/stl_map.h \
- /usr/local/include/c++/14.2.0/bits/stl_multimap.h \
+ /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
+ /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/map \
+ /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
+ /usr/include/c++/11/bits/stl_multimap.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qobject_impl.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qbindingstorage.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qnativeinterface.h \
@@ -658,7 +603,7 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qlocale.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qvariant.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qguiapplication_platform.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./QT/mainwindow.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./QT/mainwindow.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/qwidget.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qpalette.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qbrush.h \
@@ -667,7 +612,7 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qfontinfo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/qsizepolicy.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtGui/qkeysequence.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./QT/curveplotfifo.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./QT/curveplotfifo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/QObject \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qobject.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/QPair \
@@ -676,10 +621,10 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qmutex.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/QQueue \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qqueue.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./QT/realtimecurveplot.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./QT/realtimecurveplot.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/QWidget \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets/qwidget.h \
- /home/dragon/桌面/bishe/hexpod_ljl/./QT/qcustomplot.h \
+ /home/dragon/桌面/bishe/111/ljl_hexpod/./QT/qcustomplot.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/QPointer \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpointer.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/QSharedPointer \
@@ -803,12 +748,9 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qdir.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qfile.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qfiledevice.h \
- /usr/local/include/c++/14.2.0/filesystem \
- /usr/local/include/c++/14.2.0/bits/fs_fwd.h \
- /usr/local/include/c++/14.2.0/bits/fs_path.h \
- /usr/local/include/c++/14.2.0/codecvt \
- /usr/local/include/c++/14.2.0/bits/fs_dir.h \
- /usr/local/include/c++/14.2.0/bits/fs_ops.h \
+ /usr/include/c++/11/filesystem /usr/include/c++/11/bits/fs_fwd.h \
+ /usr/include/c++/11/bits/fs_path.h /usr/include/c++/11/codecvt \
+ /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qfileinfo.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qdiriterator.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qdir.h \
@@ -833,9 +775,8 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qthreadpool.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qthread.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qdeadlinetimer.h \
- /usr/local/include/c++/14.2.0/future \
- /usr/local/include/c++/14.2.0/condition_variable \
- /usr/local/include/c++/14.2.0/bits/atomic_futex.h \
+ /usr/include/c++/11/future /usr/include/c++/11/condition_variable \
+ /usr/include/c++/11/bits/atomic_futex.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qrunnable.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qexception.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpromise.h \
@@ -899,16 +840,15 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpromise.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qproperty.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpropertyprivate.h \
- /usr/local/include/c++/14.2.0/source_location \
+ /usr/include/c++/11/source_location \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpropertyanimation.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qvariantanimation.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qeasingcurve.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qpropertyprivate.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qrandom.h \
- /usr/local/include/c++/14.2.0/random \
- /usr/local/include/c++/14.2.0/bits/random.h \
- /usr/local/include/c++/14.2.0/x86_64-pc-linux-gnu/bits/opt_random.h \
- /usr/local/include/c++/14.2.0/bits/random.tcc \
+ /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qreadwritelock.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qrefcount.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qregularexpression.h \
@@ -927,102 +867,86 @@ CMakeFiles/code_struct.dir/main.cpp.o: \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsharedmemory.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsignalmapper.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsimd.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/immintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/x86gprintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/ia32intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/adxintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/bmiintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/bmi2intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/cetintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/cldemoteintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/clflushoptintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/clwbintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/clzerointrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/cmpccxaddintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/enqcmdintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/fxsrintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/lzcntintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/lwpintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/movdirintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/mwaitintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/mwaitxintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/pconfigintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/popcntintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/pkuintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/prfchiintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/raointintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/rdseedintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/rtmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/serializeintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/sgxintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/tbmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/tsxldtrkintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/uintrintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/waitpkgintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/wbnoinvdintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xsaveintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xsavecintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xsaveoptintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xsavesintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/xtestintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/hresetintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/usermsrintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/pmmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/tmmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/smmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/wmmintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxvnniintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxifmaintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxvnniint8intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxvnniint16intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx2intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512fintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512erintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512pfintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512cdintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512bwintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512dqintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vlbwintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vldqintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512ifmaintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512ifmavlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vbmiintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vbmivlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx5124fmapsintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx5124vnniwintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vpopcntdqintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vbmi2intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vbmi2vlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vnniintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vnnivlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vpopcntdqvlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512bitalgintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512bitalgvlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vp2intersectintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512vp2intersectvlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512fp16intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512fp16vlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/shaintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/sm3intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/sha512intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/sm4intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/fmaintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/f16cintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/gfniintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/vaesintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/vpclmulqdqintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512bf16vlintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avx512bf16intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/avxneconvertintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/amxtileintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/amxint8intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/amxbf16intrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/amxcomplexintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/prfchwintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/keylockerintrin.h \
- /usr/local/lib/gcc/x86_64-pc-linux-gnu/14.2.0/include/amxfp16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/immintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512erintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512pfintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124fmapsintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx5124vnniwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/keylockerintrin.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsocketnotifier.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qsortfilterproxymodel.h \
  /home/dragon/Qt/6.2.4/gcc_64/include/QtCore/qstandardpaths.h \

@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -158,8 +158,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/local/bin/g++"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar"
+			"value" : "/usr/bin/gcc-ar-11"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib"
+			"value" : "/usr/bin/gcc-ranlib-11"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -286,8 +286,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/local/bin/gcc"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ar"
+			"value" : "/usr/bin/gcc-ar-11"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/local/bin/gcc-ranlib"
+			"value" : "/usr/bin/gcc-ranlib-11"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -514,12 +514,16 @@
 			"properties" : 
 			[
 				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -615,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1235,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_HardwareCom"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_HardwareCom"
 		},
 		{
 			"name" : "HardwareCom_IS_TOP_LEVEL",
@@ -1259,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
@@ -1851,7 +1855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_Period"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_Period"
 		},
 		{
 			"name" : "Period_IS_TOP_LEVEL",
@@ -1875,7 +1879,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Period"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Period"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -6291,7 +6295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_Robotrunner"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_Robotrunner"
 		},
 		{
 			"name" : "Robotrunner_IS_TOP_LEVEL",
@@ -6315,7 +6319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6463,7 +6467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build"
 		},
 		{
 			"name" : "code_struct_IS_TOP_LEVEL",
@@ -6487,7 +6491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl"
+			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod"
 		},
 		{
 			"name" : "libevdev_CFLAGS",

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dragon/桌面/bishe/111/ljl_hexpod
+CMAKE_SOURCE_DIR = /home/dragon/桌面/bishe/hexpod_ljl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dragon/桌面/bishe/111/ljl_hexpod/build
+CMAKE_BINARY_DIR = /home/dragon/桌面/bishe/hexpod_ljl/build
 
 # Include any dependencies generated for this target.
 include Part_HardwareCom/CMakeFiles/HardwareCom.dir/depend.make
@@ -72,30 +72,30 @@ include Part_HardwareCom/CMakeFiles/HardwareCom.dir/flags.make
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o: Part_HardwareCom/CMakeFiles/HardwareCom.dir/flags.make
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o: ../Part_HardwareCom/src/UartCommunication.cpp
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o: Part_HardwareCom/CMakeFiles/HardwareCom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dragon/桌面/bishe/111/ljl_hexpod/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o -MF CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o.d -o CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o -c /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/UartCommunication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dragon/桌面/bishe/hexpod_ljl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o"
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o -MF CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o.d -o CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o -c /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/UartCommunication.cpp
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/UartCommunication.cpp > CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/UartCommunication.cpp > CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/UartCommunication.cpp -o CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/UartCommunication.cpp -o CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o: Part_HardwareCom/CMakeFiles/HardwareCom.dir/flags.make
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o: ../Part_HardwareCom/src/DM_USB2CAN.cpp
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o: Part_HardwareCom/CMakeFiles/HardwareCom.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dragon/桌面/bishe/111/ljl_hexpod/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o -MF CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o.d -o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o -c /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/DM_USB2CAN.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dragon/桌面/bishe/hexpod_ljl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o"
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o -MF CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o.d -o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o -c /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/DM_USB2CAN.cpp
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/DM_USB2CAN.cpp > CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/DM_USB2CAN.cpp > CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom/src/DM_USB2CAN.cpp -o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && /usr/local/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom/src/DM_USB2CAN.cpp -o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s
 
 # Object files for target HardwareCom
 HardwareCom_OBJECTS = \
@@ -110,18 +110,18 @@ HardwareCom_EXTERNAL_OBJECTS =
 ../lib/libHardwareCom.so: Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make
 ../lib/libHardwareCom.so: ../lib/libPeriod.so
 ../lib/libHardwareCom.so: Part_HardwareCom/CMakeFiles/HardwareCom.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dragon/桌面/bishe/111/ljl_hexpod/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../lib/libHardwareCom.so"
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HardwareCom.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dragon/桌面/bishe/hexpod_ljl/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../../lib/libHardwareCom.so"
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HardwareCom.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/build: ../lib/libHardwareCom.so
 .PHONY : Part_HardwareCom/CMakeFiles/HardwareCom.dir/build
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/clean:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom && $(CMAKE_COMMAND) -P CMakeFiles/HardwareCom.dir/cmake_clean.cmake
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom && $(CMAKE_COMMAND) -P CMakeFiles/HardwareCom.dir/cmake_clean.cmake
 .PHONY : Part_HardwareCom/CMakeFiles/HardwareCom.dir/clean
 
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/depend:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dragon/桌面/bishe/111/ljl_hexpod /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom /home/dragon/桌面/bishe/111/ljl_hexpod/build /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom/CMakeFiles/HardwareCom.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dragon/桌面/bishe/hexpod_ljl /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom /home/dragon/桌面/bishe/hexpod_ljl/build /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom/CMakeFiles/HardwareCom.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : Part_HardwareCom/CMakeFiles/HardwareCom.dir/depend
 

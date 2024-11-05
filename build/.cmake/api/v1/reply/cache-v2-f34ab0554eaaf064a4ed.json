@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -158,8 +158,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/c++"
+			"type" : "STRING",
+			"value" : "/usr/local/bin/g++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/local/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/local/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -286,8 +286,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/cc"
+			"type" : "STRING",
+			"value" : "/usr/local/bin/gcc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/usr/local/bin/gcc-ar"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/usr/local/bin/gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_HardwareCom"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_HardwareCom"
 		},
 		{
 			"name" : "HardwareCom_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_HardwareCom"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_HardwareCom"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
@@ -1855,7 +1855,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_Period"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_Period"
 		},
 		{
 			"name" : "Period_IS_TOP_LEVEL",
@@ -1879,7 +1879,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Period"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Period"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -6295,7 +6295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build/Part_Robotrunner"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build/Part_Robotrunner"
 		},
 		{
 			"name" : "Robotrunner_IS_TOP_LEVEL",
@@ -6319,7 +6319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6467,7 +6467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/build"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/build"
 		},
 		{
 			"name" : "code_struct_IS_TOP_LEVEL",
@@ -6491,7 +6491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod"
+			"value" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl"
 		},
 		{
 			"name" : "libevdev_CFLAGS",

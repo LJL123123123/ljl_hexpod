@@ -98,27 +98,27 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/../Part_HardwareCom/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Part_HardwareCom/include"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/../Part_Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Part_Period/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/../data_struct"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../data_struct"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/./include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/./include"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/../HardwareCom/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../HardwareCom/include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/Part_Robotrunner/../Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/Part_Robotrunner/../Period/include"
 				}
 			],
 			"language" : "CXX",
@@ -161,7 +161,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib",
+				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib",
 				"role" : "libraries"
 			},
 			{

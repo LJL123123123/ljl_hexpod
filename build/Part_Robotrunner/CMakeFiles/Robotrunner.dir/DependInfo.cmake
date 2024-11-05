@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/dragon/桌面/bishe/111/ljl_hexpod/Part_Robotrunner/src/IrisTac.cpp" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/IrisTac.cpp.o" "gcc" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/IrisTac.cpp.o.d"
-  "/home/dragon/桌面/bishe/111/ljl_hexpod/Part_Robotrunner/src/RobotRunner.cpp" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/RobotRunner.cpp.o" "gcc" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/RobotRunner.cpp.o.d"
+  "/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/src/IrisTac.cpp" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/IrisTac.cpp.o" "gcc" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/IrisTac.cpp.o.d"
+  "/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/src/RobotRunner.cpp" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/RobotRunner.cpp.o" "gcc" "Part_Robotrunner/CMakeFiles/Robotrunner.dir/src/RobotRunner.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -16,7 +16,7 @@ class RobotRunner : public PeriodicTask{
     public:    
         static RobotRunner* Instance(){ return instance; }
         RobotRunner(RobotRunner* _instance):
-        PeriodicTask(0.001,"robotrunner",100,sched_get_priority_max(SCHED_FIFO),SCHED_FIFO)
+        PeriodicTask(0.0015,"robotrunner",100,sched_get_priority_max(SCHED_FIFO),SCHED_FIFO)
         {
             if(!IsInstantiated)
             {

@@ -9,6 +9,7 @@ cmake -DCMAKE_BUILD_TYPE=Debug ..
 cmake -DCMAKE_BUILD_TYPE=Release ..
 ulimit -c unlimited
 pwd
+sudo ./bin/code_struct
 
 <!-- 批量显示图片的函数 -->
 // const int imagesPerRow = 4; // 每行显示4张图片

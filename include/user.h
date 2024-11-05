@@ -6,7 +6,7 @@
 #define MAX_SPEED 6.28
 
 #define Hex_zl 1
-#define LEG_NUM 1
+#define LEG_NUM 2
 #define hex_L1 90.00 //实物已改成90
 #define hex_L2 100
 #define hex_L3 100

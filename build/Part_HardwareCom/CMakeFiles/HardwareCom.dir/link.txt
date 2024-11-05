@@ -1,1 +1,1 @@
-/usr/bin/c++ -fPIC -shared -Wl,-soname,libHardwareCom.so -o ../../lib/libHardwareCom.so CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o  -Wl,-rpath,/home/dragon/桌面/bishe/111/ljl_hexpod/lib ../../lib/libPeriod.so -lpthread 
+/usr/local/bin/g++ -fPIC -shared -Wl,-soname,libHardwareCom.so -o ../../lib/libHardwareCom.so CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o  -Wl,-rpath,/home/dragon/桌面/bishe/hexpod_ljl/lib ../../lib/libPeriod.so -lpthread 

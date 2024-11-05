@@ -35,7 +35,7 @@ message("Qt6 PrintSupport package found at: ${Qt6PrintSupport_DIR}")
 pkg_check_modules(libevdev REQUIRED libevdev)
 
 # 生成可执行文件
-add_executable(code_struct main.cpp Ctr_Hexpod.hpp Hex_gait.hpp)
+add_executable(code_struct main.cpp Ctr_Hexpod.hpp)
 
 #导入头文件索引
 include_directories(./Part_Robotrunner/include)

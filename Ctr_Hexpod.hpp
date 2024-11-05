@@ -23,11 +23,12 @@ class HexPodController : public RobotController
         LowPassFilter<double> Pos_filter[3];
         LowPassFilter<double> Vel_filter[3];
         LowPassFilter<double> Touq_filter[3];
-        DMmotor m_LegMotor[3];
+        DMmotor m_LegMotor[3*LEG_NUM];
         Module<HexPodController> m_update_module;
 
         HexPodController():RobotController("HexPodController"),
-        m_LegMotor{DMmotor("leg1_motor1"),DMmotor("leg1_motor2"),DMmotor("leg1_motor3")},
+        m_LegMotor{DMmotor("leg1_motor1"),DMmotor("leg1_motor2"),DMmotor("leg1_motor3")
+                ,DMmotor("leg2_motor1"),DMmotor("leg2_motor2"),DMmotor("leg2_motor3")},
 
         m_update_module{MT_CONTROLLER,this,&HexPodController::update,"HexPodController_update_module"}
         {};
@@ -38,7 +39,7 @@ class HexPodController : public RobotController
         double gama;
         double pi[4];
         };
-        struct Leg legs[LEG_NUM + 1];
+        struct Leg legs[LEG_NUM];
                 
         void init() override{
             std::cout<<11<<std::endl;
@@ -49,21 +50,25 @@ class HexPodController : public RobotController
                 return;
             }            
 
-            legs[1].gama =  degree2rad(-20);
+            legs[0].gama =  degree2rad(-20);
+            legs[2].gama =  degree2rad(0.0);
+            legs[4].gama =  degree2rad(+20.0);
+            legs[1].gama =  degree2rad(+20.0);
             legs[3].gama =  degree2rad(0.0);
-            legs[5].gama =  degree2rad(+20.0);
-            legs[2].gama =  degree2rad(+20.0);
-            legs[4].gama =  degree2rad(0.0);
-            legs[6].gama =  degree2rad(-20.0);
-            
-            for(int i = 0; i < 3; i++)
+            legs[5].gama =  degree2rad(-20.0);
+            for (int j = 0; j < LEG_NUM; j++)
             {
-                m_LegMotor[i].Connectmotor(i+1,MotorMode::MIT_MODE,massage_ptr,DMMode::MIT);
-                m_LegMotor[i].control_p_des = 0;
-                m_LegMotor[i].control_k_d = 0.8f;
-                m_LegMotor[i].control_k_p = 25.0f;
-                m_LegMotor[i].control_v_des = 0.5f;
+                for(int i = 0; i < 3; i++)
+                {
+                    m_LegMotor[j*3+i].Connectmotor(j*3+i+1,MotorMode::MIT_MODE,massage_ptr,DMMode::MIT);
+                    m_LegMotor[j*3+i].control_p_des = 0;
+                    m_LegMotor[j*3+i].control_k_d = 0.8f;
+                    m_LegMotor[j*3+i].control_k_p = 25.0f;
+                    m_LegMotor[j*3+i].control_v_des = 0.5f;
+                }
             }
+            
+            
             // std::cout<<13<<std::endl;
         };
 
@@ -166,8 +171,12 @@ class HexPodController : public RobotController
         Eigen::Vector3d hex_v_0d;
         Eigen::Vector3d hex_omega;  
 
-        void Jacbi(double gama)
+        void Jacbi(double gama,int leg_n)
     {
+
+        Hex_tehta << m_LegMotor[leg_n*3+0].feedback_pos,
+                     m_LegMotor[leg_n*3+1].feedback_pos,
+                     m_LegMotor[leg_n*3+2].feedback_pos;
       
         double s1_gamma = sin(Hex_tehta[0] + gama); // 根据实际情况更新
         double c1_gamma = cos(Hex_tehta[0] + gama);
@@ -207,12 +216,12 @@ class HexPodController : public RobotController
         Eigen::Matrix3d hex_K_d;
         Eigen::Vector3d hex_f_d;
         Eigen::Vector3d hex_touq;
-        void touque_caul(double gama)
+        void touque_caul(double gama,int leg_n)
         {
-            Hex_tehta<<m_LegMotor[0].feedback_pos, m_LegMotor[1].feedback_pos, m_LegMotor[2].feedback_pos;
+            Hex_tehta<<m_LegMotor[leg_n*3+0].feedback_pos, m_LegMotor[leg_n*3+1].feedback_pos, m_LegMotor[leg_n*3+2].feedback_pos;
             FK(gama);
             
-            hex_v_0f<<m_LegMotor[0].feedback_vel, m_LegMotor[1].feedback_vel, m_LegMotor[2].feedback_vel;
+            hex_v_0f<<m_LegMotor[leg_n*3+0].feedback_vel, m_LegMotor[leg_n*3+1].feedback_vel, m_LegMotor[leg_n*3+2].feedback_vel;
             hex_v_0f = hex_J * hex_v_0f;            
 
             hex_K_p<< 1, 0, 0,     0, 1, 0,     0, 0, 1;
@@ -247,36 +256,32 @@ class HexPodController : public RobotController
         
         bool start = false;
         void leg_controll(int leg_n, double* q ) //输入rad
-        {
+        {            
             if(start == false)
             {
                 for(int i = 0; i < 3; i++)
                 {
-                    m_LegMotor[i].control_k_d = 0.8f;
-                    m_LegMotor[i].control_k_p = 25.0f;
+                    m_LegMotor[leg_n*3+i].control_k_d = 0.8f;
+                    m_LegMotor[leg_n*3+i].control_k_p = 25.0f;
                 }
             }
-            
-            Hex_tehta << m_LegMotor[0].feedback_pos,
-                     m_LegMotor[1].feedback_pos,
-                     m_LegMotor[2].feedback_pos;
-
-            Jacbi(legs[leg_n].gama);
-            touque_caul(legs[leg_n].gama);
+                        
+            Jacbi(legs[leg_n].gama,leg_n);
+            touque_caul(legs[leg_n].gama,leg_n);
 
             double temp[] = { 0,0,0,0 };
             theta2q(q, q);
 
-            if(leg_n==2||leg_n==3||leg_n==6)
+            if(leg_n==1||leg_n==2||leg_n==5)
             q[3] = -q[3];
-            if(leg_n==1||leg_n==4||leg_n==5)
+            if(leg_n==0||leg_n==3||leg_n==4)
             q[2] = -q[2];
 
             for(int i = 0; i < 3; i++)
                 {
-                    m_LegMotor[i].control_v_des = Vel_filter[i].filter(hex_omega[i]);
-                    m_LegMotor[i].control_p_des = Pos_filter[i].filter(q[i+1]);  
-                    m_LegMotor[i].control_torque = -Touq_filter[i].filter(hex_touq[i]);    
+                    m_LegMotor[leg_n*3+i].control_v_des = Vel_filter[i].filter(hex_omega[i]);
+                    m_LegMotor[leg_n*3+i].control_p_des = Pos_filter[i].filter(q[i+1]);  
+                    m_LegMotor[leg_n*3+i].control_torque = -Touq_filter[i].filter(hex_touq[i]);    
                     // m_LegMotor[i].control_torque = hex_touq[i];                  
                 }
             
@@ -328,24 +333,24 @@ class HexPodController : public RobotController
         // q_JI[3]-=PI/2;
         // else
         // q_JI[3]+=PI/2;
-        leg_controll(1, q_JI);
+        leg_controll(0, q_JI);
 
         /**************************************/
 
-        // double xp=0,zp=0,xpv=0,zpv=0;
-        // gait_creat(t + (double)1*hex_T / 2, &xp, &zp, &xpv, &zpv);
-        // p_OU[1] = XYLL * cos(legs[2].gama);
-        // p_OU[2] = xp - XYLL * sin(legs[2].gama);
-        // p_OU[3] = zp - ZLL;
-        // hex_p_0d << p_OU[1],p_OU[2],p_OU[3];
-        // hex_v_0d << 0.0,xpv,zpv;
-        // IK(0, pi, p_OU, q_OU);
-        // q_OU[1] = -q_OU[1];
+        double xp=0,zp=0,xpv=0,zpv=0;
+        gait_creat(t + (double)1*hex_T / 2, &xp, &zp, &xpv, &zpv);
+        p_OU[1] = XYLL * cos(legs[2].gama);
+        p_OU[2] = xp - XYLL * sin(legs[2].gama);
+        p_OU[3] = zp - ZLL;
+        hex_p_0d << p_OU[1],p_OU[2],p_OU[3];
+        hex_v_0d << 0.0,xpv,zpv;
+        IK(0, pi, p_OU, q_OU);
+        q_OU[1] = -q_OU[1];
         // if(q_OU[3]>0)
         // q_OU[3]-=PI/2;
         // else
         // q_OU[3]+=PI/2;      
-        // leg_controll(2, q_OU);
+        leg_controll(1, q_OU);
 
         /****************************************/
 
@@ -425,7 +430,7 @@ class HexPodController : public RobotController
         {   
         num = 0 ;
         double q[] = { 0,0,0,0 };
-        hex_omega << 0.1d,0.1d,0.1d;
+        hex_omega << 0,0,0;
         for(int i=0;i<3;i++)
         {
             Pos_filter[i].previousFilteredValue = 0;
@@ -437,9 +442,6 @@ class HexPodController : public RobotController
 
             m_LegMotor[i].control_k_d = 0.1f;
             m_LegMotor[i].control_k_p = 5.0f;
-
-
-        
         }
         leg_controll(1, q);
         // leg_controll(5, q);

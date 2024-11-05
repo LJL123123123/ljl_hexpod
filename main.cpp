@@ -74,15 +74,13 @@ int main(int argc, char *argv[])
                 QVector<double> newData;
                 double key = QTime::currentTime().msecsSinceStartOfDay() / 1000.0;
                 newData.append(key);
-                // newData.append(Project.m_hexpodController.q_JI[1]);
-                // newData.append(Project.m_hexpodController.q_JI[2]);
-                // newData.append(Project.m_hexpodController.q_JI[3]);
+                
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_pos);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
                 newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
-                newData.append(Project.m_hexpodController.m_LegMotor[1].control_p_des);
-                newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[3].control_p_des);
+                // newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].control_v_des);                
@@ -95,6 +93,8 @@ int main(int argc, char *argv[])
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_torque);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_torque);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_torque);
+
+                
                 if (!fifo->isFull())
                 {
                     fifo->write(newData);

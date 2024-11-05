@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dragon/桌面/bishe/111/ljl_hexpod
+CMAKE_SOURCE_DIR = /home/dragon/桌面/bishe/hexpod_ljl
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dragon/桌面/bishe/111/ljl_hexpod/build
+CMAKE_BINARY_DIR = /home/dragon/桌面/bishe/hexpod_ljl/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dragon/桌面/bishe/111/ljl_hexpod/build/CMakeFiles /home/dragon/桌面/bishe/111/ljl_hexpod/build/Part_HardwareCom//CMakeFiles/progress.marks
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dragon/桌面/bishe/111/ljl_hexpod/build/CMakeFiles 0
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dragon/桌面/bishe/hexpod_ljl/build/CMakeFiles /home/dragon/桌面/bishe/hexpod_ljl/build/Part_HardwareCom//CMakeFiles/progress.marks
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/dragon/桌面/bishe/hexpod_ljl/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/clean
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/preinstall
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/preinstall
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 Part_HardwareCom/CMakeFiles/HardwareCom.dir/rule:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/CMakeFiles/HardwareCom.dir/rule
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/CMakeFiles/HardwareCom.dir/rule
 .PHONY : Part_HardwareCom/CMakeFiles/HardwareCom.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ HardwareCom: Part_HardwareCom/CMakeFiles/HardwareCom.dir/rule
 
 # fast build rule for target.
 HardwareCom/fast:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/build
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/build
 .PHONY : HardwareCom/fast
 
 # Convenience name for target.
 Part_HardwareCom/CMakeFiles/TestHardware.dir/rule:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/CMakeFiles/TestHardware.dir/rule
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Part_HardwareCom/CMakeFiles/TestHardware.dir/rule
 .PHONY : Part_HardwareCom/CMakeFiles/TestHardware.dir/rule
 
 # Convenience name for target.
@@ -141,7 +141,7 @@ TestHardware: Part_HardwareCom/CMakeFiles/TestHardware.dir/rule
 
 # fast build rule for target.
 TestHardware/fast:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/build
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/build
 .PHONY : TestHardware/fast
 
 src/DM_USB2CAN.o: src/DM_USB2CAN.cpp.o
@@ -149,7 +149,7 @@ src/DM_USB2CAN.o: src/DM_USB2CAN.cpp.o
 
 # target to build an object file
 src/DM_USB2CAN.cpp.o:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.o
 .PHONY : src/DM_USB2CAN.cpp.o
 
 src/DM_USB2CAN.i: src/DM_USB2CAN.cpp.i
@@ -157,7 +157,7 @@ src/DM_USB2CAN.i: src/DM_USB2CAN.cpp.i
 
 # target to preprocess a source file
 src/DM_USB2CAN.cpp.i:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.i
 .PHONY : src/DM_USB2CAN.cpp.i
 
 src/DM_USB2CAN.s: src/DM_USB2CAN.cpp.s
@@ -165,7 +165,7 @@ src/DM_USB2CAN.s: src/DM_USB2CAN.cpp.s
 
 # target to generate assembly for a file
 src/DM_USB2CAN.cpp.s:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/DM_USB2CAN.cpp.s
 .PHONY : src/DM_USB2CAN.cpp.s
 
 src/UartCommunication.o: src/UartCommunication.cpp.o
@@ -173,7 +173,7 @@ src/UartCommunication.o: src/UartCommunication.cpp.o
 
 # target to build an object file
 src/UartCommunication.cpp.o:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.o
 .PHONY : src/UartCommunication.cpp.o
 
 src/UartCommunication.i: src/UartCommunication.cpp.i
@@ -181,7 +181,7 @@ src/UartCommunication.i: src/UartCommunication.cpp.i
 
 # target to preprocess a source file
 src/UartCommunication.cpp.i:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.i
 .PHONY : src/UartCommunication.cpp.i
 
 src/UartCommunication.s: src/UartCommunication.cpp.s
@@ -189,7 +189,7 @@ src/UartCommunication.s: src/UartCommunication.cpp.s
 
 # target to generate assembly for a file
 src/UartCommunication.cpp.s:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/HardwareCom.dir/build.make Part_HardwareCom/CMakeFiles/HardwareCom.dir/src/UartCommunication.cpp.s
 .PHONY : src/UartCommunication.cpp.s
 
 test/test.o: test/test.cpp.o
@@ -197,7 +197,7 @@ test/test.o: test/test.cpp.o
 
 # target to build an object file
 test/test.cpp.o:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.o
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.o
 .PHONY : test/test.cpp.o
 
 test/test.i: test/test.cpp.i
@@ -205,7 +205,7 @@ test/test.i: test/test.cpp.i
 
 # target to preprocess a source file
 test/test.cpp.i:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.i
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.i
 .PHONY : test/test.cpp.i
 
 test/test.s: test/test.cpp.s
@@ -213,7 +213,7 @@ test/test.s: test/test.cpp.s
 
 # target to generate assembly for a file
 test/test.cpp.s:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.s
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(MAKE) $(MAKESILENT) -f Part_HardwareCom/CMakeFiles/TestHardware.dir/build.make Part_HardwareCom/CMakeFiles/TestHardware.dir/test/test.cpp.s
 .PHONY : test/test.cpp.s
 
 # Help Target
@@ -246,6 +246,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dragon/桌面/bishe/111/ljl_hexpod/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/dragon/桌面/bishe/hexpod_ljl/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

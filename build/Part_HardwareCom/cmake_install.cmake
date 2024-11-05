@@ -1,4 +1,4 @@
-# Install script for directory: /home/dragon/桌面/bishe/111/ljl_hexpod/Part_HardwareCom
+# Install script for directory: /home/dragon/桌面/bishe/hexpod_ljl/Part_HardwareCom
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

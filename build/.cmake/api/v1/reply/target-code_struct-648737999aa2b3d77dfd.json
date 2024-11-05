@@ -163,31 +163,31 @@
 			[
 				{
 					"backtrace" : 10,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./Part_Robotrunner/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./Part_Robotrunner/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./Part_HardwareCom/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./Part_HardwareCom/include"
 				},
 				{
 					"backtrace" : 12,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./Part_Period/include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./Part_Period/include"
 				},
 				{
 					"backtrace" : 13,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./QT"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./QT"
 				},
 				{
 					"backtrace" : 14,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./Eigen"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./Eigen"
 				},
 				{
 					"backtrace" : 15,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./data_struct"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./data_struct"
 				},
 				{
 					"backtrace" : 16,
-					"path" : "/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/./include"
+					"path" : "/home/dragon/\u684c\u9762/bishe/hexpod_ljl/./include"
 				},
 				{
 					"backtrace" : 17,
@@ -260,7 +260,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/111/ljl_hexpod/lib:/home/dragon/Qt/6.2.4/gcc_64/lib:/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6PrintSupport/../..",
+				"fragment" : "-Wl,-rpath,/home/dragon/\u684c\u9762/bishe/hexpod_ljl/lib:/home/dragon/Qt/6.2.4/gcc_64/lib:/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6PrintSupport/../..",
 				"role" : "libraries"
 			},
 			{
@@ -347,8 +347,7 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1,
-				2
+				1
 			]
 		}
 	],
@@ -363,11 +362,6 @@
 		{
 			"backtrace" : 1,
 			"path" : "Ctr_Hexpod.hpp",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Hex_gait.hpp",
 			"sourceGroupIndex" : 1
 		}
 	],

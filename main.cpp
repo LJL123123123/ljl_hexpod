@@ -9,7 +9,7 @@
 #include <QtWidgets/QApplication>
 #include "mainwindow.h"
 
-#include "Hex_gait.hpp"
+// #include "Hex_gait.hpp"
  
 #define NEED_PLOT 1
 #define MAX_Y -5
@@ -74,15 +74,15 @@ int main(int argc, char *argv[])
                 QVector<double> newData;
                 double key = QTime::currentTime().msecsSinceStartOfDay() / 1000.0;
                 newData.append(key);
-                // newData.append(Project.m_hexpodController.Leg[0].q[1]);
-                // newData.append(Project.m_hexpodController.Leg[0].q[2]);
-                // newData.append(Project.m_hexpodController.Leg[0].q[3]);
+                // newData.append(Project.m_hexpodController.q_JI[1]);
+                // newData.append(Project.m_hexpodController.q_JI[2]);
+                // newData.append(Project.m_hexpodController.q_JI[3]);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_pos);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
-                newData.append(Project.m_hexpodController.Leg[0].m_LegMotor[0].control_p_des);
-                newData.append(Project.m_hexpodController.Leg[0].m_LegMotor[1].control_p_des);
-                newData.append(Project.m_hexpodController.Leg[0].m_LegMotor[2].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[1].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].control_v_des);                

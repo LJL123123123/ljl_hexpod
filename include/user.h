@@ -13,7 +13,7 @@
 #define XYLL (hex_L1+hex_L2+hex_L3*sin(18/180*PI))//198.401699
 #define ZLL hex_L3*cos(18/180*PI)//95.105652
 
-#define hex_L 160*1.0 // 实际移动距离为80
+#define hex_L 160*1.5 // 实际移动距离为80
 #define hex_H  80 // 腿抬高高度
 #define hex_nn 600 // 采样数（4的倍数）
 #define hex_T 2

@@ -20,37 +20,37 @@
 class HexPodController : public RobotController
 {
     public:
-        LowPassFilter<double> Pos_filter[3];
-        LowPassFilter<double> Vel_filter[3];
-        LowPassFilter<double> Touq_filter[3];
+        
         DMmotor m_LegMotor[3*LEG_NUM];
         Module<HexPodController> m_update_module;
 
         HexPodController():RobotController("HexPodController"),
-        m_LegMotor{DMmotor("leg1_motor1"),DMmotor("leg1_motor2"),DMmotor("leg1_motor3")
-                ,DMmotor("leg2_motor1"),DMmotor("leg2_motor2"),DMmotor("leg2_motor3")},
+        m_LegMotor{DMmotor("leg0_motor1"),DMmotor("leg0_motor2"),DMmotor("leg0_motor3")
+                ,DMmotor("leg1_motor1"),DMmotor("leg1_motor2"),DMmotor("leg1_motor3")},
 
         m_update_module{MT_CONTROLLER,this,&HexPodController::update,"HexPodController_update_module"}
         {};
 
         struct Leg {
-        id_t motor_id[3 + 1];
-        id_t master_id[3 + 1];
         double gama;
-        double pi[4];
+        LowPassFilter<double> Pos_filter[3];
+        LowPassFilter<double> Vel_filter[3];
+        LowPassFilter<double> Touq_filter[3];
+
         };
         struct Leg legs[LEG_NUM];
                 
         void init() override{
             std::cout<<11<<std::endl;
-            DM_USB2CAN* massage_ptr = dynamic_cast<DM_USB2CAN*> (PeriodicTaskManager::Instance()->FindTask("DM_USB2CAN1"));
-            if(massage_ptr == nullptr)
+            DM_USB2CAN* massage_ptr = dynamic_cast<DM_USB2CAN*> (PeriodicTaskManager::Instance()->FindTask("DM_USB2CAN1"));/*多写一个变量*/
+            DM_USB2CAN* massage_ptr1 = dynamic_cast<DM_USB2CAN*> (PeriodicTaskManager::Instance()->FindTask("DM_USB2CAN2"));
+            if(massage_ptr == nullptr || massage_ptr1 == nullptr)
             {
                 fprintf(stderr,"can not find communication interface\n");
                 return;
             }            
 
-            legs[0].gama =  degree2rad(-20);
+            legs[0].gama =  degree2rad(-20.0);
             legs[2].gama =  degree2rad(0.0);
             legs[4].gama =  degree2rad(+20.0);
             legs[1].gama =  degree2rad(+20.0);
@@ -60,7 +60,11 @@ class HexPodController : public RobotController
             {
                 for(int i = 0; i < 3; i++)
                 {
-                    m_LegMotor[j*3+i].Connectmotor(j*3+i+1,MotorMode::MIT_MODE,massage_ptr,DMMode::MIT);
+                    if(j == 0)
+                    m_LegMotor[j*3+i].Connectmotor(j*3+i+1,MotorMode::MIT_MODE,massage_ptr,DMMode::MIT);/*串口在这*/
+                    else if(j == 1)
+                    m_LegMotor[j*3+i].Connectmotor(j*3+i+1,MotorMode::MIT_MODE,massage_ptr1,DMMode::MIT);
+                    fprintf(stderr,"leg%d_motor%d:m_LegMotor[%d]:%d\n",j,i,j*3+i,m_LegMotor[j*3+i].id);
                     m_LegMotor[j*3+i].control_p_des = 0;
                     m_LegMotor[j*3+i].control_k_d = 0.8f;
                     m_LegMotor[j*3+i].control_k_p = 25.0f;
@@ -276,12 +280,12 @@ class HexPodController : public RobotController
             q[3] = -q[3];
             if(leg_n==0||leg_n==3||leg_n==4)
             q[2] = -q[2];
-
+            // if(leg_n == 1)
             for(int i = 0; i < 3; i++)
                 {
-                    m_LegMotor[leg_n*3+i].control_v_des = Vel_filter[i].filter(hex_omega[i]);
-                    m_LegMotor[leg_n*3+i].control_p_des = Pos_filter[i].filter(q[i+1]);  
-                    m_LegMotor[leg_n*3+i].control_torque = -Touq_filter[i].filter(hex_touq[i]);    
+                    m_LegMotor[leg_n*3+i].control_v_des = legs[leg_n].Vel_filter[i].filter(hex_omega[i]);
+                    m_LegMotor[leg_n*3+i].control_p_des = legs[leg_n].Pos_filter[i].filter(q[i+1]);  
+                    m_LegMotor[leg_n*3+i].control_torque = legs[leg_n].Touq_filter[i].filter(hex_touq[i]);    
                     // m_LegMotor[i].control_torque = hex_touq[i];                  
                 }
             
@@ -323,12 +327,12 @@ class HexPodController : public RobotController
 
         double xs=0,zs=0,xsv=0,zsv=0;
         gait_creat(t, &xs, &zs, &xsv, &zsv);
-        p_JI[1] = XYLL* cos(legs[1].gama);
-        p_JI[2] = xs + XYLL * sin(legs[1].gama);
+        p_JI[1] = XYLL* cos(legs[0].gama);
+        p_JI[2] = xs + XYLL * sin(legs[0].gama);
         p_JI[3] = zs - ZLL;
         hex_p_0d << p_JI[1],p_JI[2],p_JI[3];    
         hex_v_0d << 0.0,xsv,zsv;        
-        IK(0, pi, p_JI, q_JI);
+        IK(legs[0].gama, pi, p_JI, q_JI);
         // if(q_JI[3]>0)
         // q_JI[3]-=PI/2;
         // else
@@ -339,12 +343,12 @@ class HexPodController : public RobotController
 
         double xp=0,zp=0,xpv=0,zpv=0;
         gait_creat(t + (double)1*hex_T / 2, &xp, &zp, &xpv, &zpv);
-        p_OU[1] = XYLL * cos(legs[2].gama);
-        p_OU[2] = xp - XYLL * sin(legs[2].gama);
+        p_OU[1] = XYLL * cos(legs[1].gama);
+        p_OU[2] = xp - XYLL * sin(legs[1].gama);
         p_OU[3] = zp - ZLL;
         hex_p_0d << p_OU[1],p_OU[2],p_OU[3];
         hex_v_0d << 0.0,xpv,zpv;
-        IK(0, pi, p_OU, q_OU);
+        IK(-legs[1].gama, pi, p_OU, q_OU);
         q_OU[1] = -q_OU[1];
         // if(q_OU[3]>0)
         // q_OU[3]-=PI/2;
@@ -431,21 +435,22 @@ class HexPodController : public RobotController
         num = 0 ;
         double q[] = { 0,0,0,0 };
         hex_omega << 0,0,0;
-        for(int i=0;i<3;i++)
-        {
-            Pos_filter[i].previousFilteredValue = 0;
-            Pos_filter[i].alpha = 1e-2;
-            Vel_filter[i].previousFilteredValue = hex_omega[i];
-            Vel_filter[i].alpha = 1e-8;
-            Touq_filter[i].previousFilteredValue = 0;
-            Touq_filter[i].alpha = 1e-10;
+        for(int j=0;j<LEG_NUM;j++)
+            for(int i=0;i<3;i++)
+            {
+                legs[j].Pos_filter[i].previousFilteredValue = 0;
+                legs[j].Pos_filter[i].alpha = 1e-2;
+                legs[j].Vel_filter[i].previousFilteredValue = hex_omega[i];
+                legs[j].Vel_filter[i].alpha = 1e-8;
+                legs[j].Touq_filter[i].previousFilteredValue = 0;
+                legs[j].Touq_filter[i].alpha = 1e-10;
 
-            m_LegMotor[i].control_k_d = 0.1f;
-            m_LegMotor[i].control_k_p = 5.0f;
-        }
-        leg_controll(1, q);
+                m_LegMotor[i].control_k_d = 0.1f;
+                m_LegMotor[i].control_k_p = 5.0f;
+            }
+        leg_controll(0, q);
         // leg_controll(5, q);
-        // leg_controll(2, q);
+        leg_controll(1, q);
         // leg_controll(6, q);
         // leg_controll(3, q);
         // leg_controll(4, q);

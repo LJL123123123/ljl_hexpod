@@ -12,8 +12,8 @@
 // #include "Hex_gait.hpp"
  
 #define NEED_PLOT 1
-#define MAX_Y -5
-#define MIN_Y 5
+#define MAX_Y -4
+#define MIN_Y 4
 // #define CHANNEL_NUM 3*LEG_NUM
 #define CHANNEL_NUM 3
 
@@ -36,8 +36,10 @@ int main(int argc, char *argv[])
     Gloabl_Timer::Instance();
     PeriodicTaskManager::Instance();
 
-    DM_USB2CAN test = DM_USB2CAN("DM_USB2CAN1",100,0.001,921600,"/dev/ttyACM0",128,1024,8);
+    DM_USB2CAN test = DM_USB2CAN("DM_USB2CAN1",100,0.001,921600,"/dev/ttyACM2",128,1024,8);
+    DM_USB2CAN test1 = DM_USB2CAN("DM_USB2CAN2",100,0.001,921600,"/dev/ttyACM1",128,1024,8);
     test.start();
+    test1.start();
 
     IrisTac_Project Project;
     Project.start();
@@ -76,20 +78,20 @@ int main(int argc, char *argv[])
                 newData.append(key);
                 
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
-                // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_pos);
+                // newData.append(Project.m_hexpodController.m_LegMotor[4].feedback_pos);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
-                newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
                 newData.append(Project.m_hexpodController.m_LegMotor[3].control_p_des);
-                // newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[4].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[5].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].control_v_des);                
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_vel);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_vel);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_vel);
-                // newData.append(Project.m_hexpodController.m_LegMotor[0].control_torque);
-                // newData.append(Project.m_hexpodController.m_LegMotor[1].control_torque);
-                // newData.append(Project.m_hexpodController.m_LegMotor[2].control_torque);
+                // newData.append(Project.m_hexpodController.m_LegMotor[3].control_torque);
+                // newData.append(Project.m_hexpodController.m_LegMotor[4].control_torque);
+                // newData.append(Project.m_hexpodController.m_LegMotor[5].control_torque);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_torque);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].feedback_torque);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_torque);

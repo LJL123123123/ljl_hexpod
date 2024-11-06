@@ -1,1 +1,1 @@
-/usr/local/bin/g++ CMakeFiles/TestHardware.dir/test/test.cpp.o -o ../bin/TestHardware  -Wl,-rpath,/home/dragon/桌面/bishe/hexpod_ljl/lib ../../lib/libHardwareCom.so ../../lib/libPeriod.so -lpthread 
+/usr/local/bin/g++ -g CMakeFiles/TestHardware.dir/test/test.cpp.o -o ../bin/TestHardware  -Wl,-rpath,/home/dragon/桌面/bishe/hexpod_ljl/lib ../../lib/libHardwareCom.so ../../lib/libPeriod.so -lpthread 

@@ -6,5 +6,5 @@ CXX_DEFINES = -DPeriod_EXPORTS
 
 CXX_INCLUDES = -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Period/./include
 
-CXX_FLAGS = -fPIC -std=gnu++20
+CXX_FLAGS = -g -fPIC -std=gnu++20
 

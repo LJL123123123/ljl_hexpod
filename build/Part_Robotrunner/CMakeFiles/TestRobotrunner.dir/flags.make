@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/../Part_HardwareCom/include -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/../Part_Period/include -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/../data_struct -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/./include -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/../HardwareCom/include -I/home/dragon/桌面/bishe/hexpod_ljl/Part_Robotrunner/../Period/include
 
-CXX_FLAGS = -std=gnu++20
+CXX_FLAGS = -g -std=gnu++20
 

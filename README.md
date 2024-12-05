@@ -97,5 +97,8 @@ https://blog.csdn.net/learning_man/article/details/120274904
 cmake ver
 https://blog.csdn.net/Man_1man/article/details/126467371
 
-ssh
+wsl-ssh
 https://blog.csdn.net/m0_57195758/article/details/136591106
+
+wsl-usb
+https://blog.csdn.net/qq_43066145/article/details/139812587

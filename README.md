@@ -90,3 +90,12 @@ rm -rf ./*
 具体计算为x=1/fps
 
 QTver 6.2.4
+
+libQt6PrintSupport.so.6: cannot open shared object file: No such file or directory-------result
+https://blog.csdn.net/learning_man/article/details/120274904
+
+cmake ver
+https://blog.csdn.net/Man_1man/article/details/126467371
+
+ssh
+https://blog.csdn.net/m0_57195758/article/details/136591106

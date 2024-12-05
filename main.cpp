@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
     Gloabl_Timer::Instance();
     PeriodicTaskManager::Instance();
 
-    DM_USB2CAN test = DM_USB2CAN("DM_USB2CAN1",100,0.001,921600,"/dev/ttyACM2",128,1024,8);
+    DM_USB2CAN test = DM_USB2CAN("DM_USB2CAN1",100,0.001,921600,"/dev/ttyACM0",128,1024,8);
     DM_USB2CAN test1 = DM_USB2CAN("DM_USB2CAN2",100,0.001,921600,"/dev/ttyACM1",128,1024,8);
     test.start();
     test1.start();

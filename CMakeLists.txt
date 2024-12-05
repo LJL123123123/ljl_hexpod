@@ -60,7 +60,8 @@ target_link_libraries(code_struct PRIVATE Robotrunner)
 target_link_libraries(code_struct PRIVATE ${libevdev_LIBRARIES})
 # target_link_libraries(code_struct PRIVATE ${OpenCV_LIBRARIES})
 target_link_libraries(code_struct PRIVATE Qt6::Widgets)
-target_link_libraries(code_struct PRIVATE ${Qt6PrintSupport_DIR}/../../libQt6PrintSupport.so.6)
+target_link_libraries(code_struct PRIVATE Qt6::PrintSupport)
+target_link_libraries(code_struct PRIVATE /home/dragon/Qt/6.2.4/gcc_64/lib/)
 target_link_libraries(code_struct PRIVATE pthread)
 
 # 导入先前编译生成的

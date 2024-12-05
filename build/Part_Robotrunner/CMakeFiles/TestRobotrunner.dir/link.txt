@@ -1,1 +1,0 @@
-/usr/local/bin/g++ -g CMakeFiles/TestRobotrunner.dir/test/test.cpp.o -o ../bin/TestRobotrunner  -Wl,-rpath,/home/dragon/桌面/bishe/hexpod_ljl/lib ../../lib/libRobotrunner.so ../../lib/libHardwareCom.so ../../lib/libPeriod.so -lpthread 

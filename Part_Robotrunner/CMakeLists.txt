@@ -7,6 +7,9 @@ include_directories(../Part_HardwareCom/include)
 include_directories(../Part_Period/include)
 include_directories(../data_struct)
 include_directories(./include)
+
+include_directories(../motor_can_cpp/src)
+
 # Add the source files
 set(SOURCES src/RobotRunner.cpp src/IrisTac.cpp)
 #Generate the shared library把该生成的项目创建为共享库（创建的内容为上面定义的SOURCES内容）
@@ -23,5 +26,6 @@ include_directories(../Period/include)
 add_executable(TestRobotrunner test/test.cpp)
 target_link_libraries(TestRobotrunner PRIVATE Robotrunner)
 target_link_libraries(TestRobotrunner PRIVATE HardwareCom)
+# target_link_libraries(TestRobotrunner PRIVATE motor_can_cpp)
 target_link_libraries(TestRobotrunner PRIVATE Period)
 set_target_properties(TestRobotrunner PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../build/bin)

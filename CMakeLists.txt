@@ -15,6 +15,7 @@ set(CMAKE_CXX_FLAGS_DEBUG "-g")    # 为 Debug 类型设置 -g（生成调试信
 add_subdirectory(Part_Period)
 add_subdirectory(Part_HardwareCom)
 add_subdirectory(Part_Robotrunner)
+add_subdirectory(motor_can_cpp)
 
 ############################################设置主函数############################################
 #查找外来库
@@ -47,6 +48,9 @@ include_directories(./Eigen)
 include_directories(./data_struct)
 
 include_directories(./include)
+include_directories(./motor_can_cpp/src)
+include_directories(./motor_can_cpp/include/motor_can_cpp)
+
 # add_executable(code_struct main.cpp Ctr_Hexpod.hpp)
 
 include_directories(${libevdev_INCLUDE_DIRS})
@@ -55,6 +59,7 @@ include_directories(${libevdev_INCLUDE_DIRS})
 # 指定 PUBLIC 会使链接信息和包含路径在目标和依赖目标中都可见。
 # 指定 PRIVATE 只会使链接信息在目标中可见，而不会传播给依赖目标。
 target_link_libraries(code_struct PRIVATE Period)
+target_link_libraries(code_struct PRIVATE motor_can_cpp)
 target_link_libraries(code_struct PRIVATE HardwareCom)
 target_link_libraries(code_struct PRIVATE Robotrunner)
 target_link_libraries(code_struct PRIVATE ${libevdev_LIBRARIES})

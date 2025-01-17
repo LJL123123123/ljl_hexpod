@@ -3,6 +3,7 @@
 
 #include "Motor.hpp"
 #include "DM_USB2CAN.hpp"
+#include "motor_can.hpp"
 
 enum MotorMode {
     RELAX_MODE,

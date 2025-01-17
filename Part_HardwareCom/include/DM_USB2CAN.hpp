@@ -1,6 +1,7 @@
 #ifndef DM_USB2CAN_HPP
 #define DM_USB2CAN_HPP
-#include "UartCommunication.hpp"
+// #include "UartCommunication.hpp"
+#include "motor_can.hpp"
 #include <unordered_map>
 #include <cstring>
 
@@ -58,7 +59,7 @@ struct can_msg
     uint32_t can_id;
 };
 
-class DM_USB2CAN : public UartCom{
+class DM_USB2CAN : public MotorCan{
     public:
         //串口波特率为921600，1s能发送921600/(30*（8+1）)=3413个控制帧。
         //1s能接收921600/(16*（8+1）)=6400个反馈帧。
@@ -72,7 +73,7 @@ class DM_USB2CAN : public UartCom{
         //优先保证id小的电机，id1电机6000控制，id2电机1000控制，最后结果为id1=3500hz,id2=500hz
         //若多者的和<4000,自然每一个电机都小于4000，则控制符合设定。
         DM_USB2CAN(std::string _name, uint8_t _prefer_cpu, float _update_rate, int _baudrate, const char *_pathname,uint32_t _send_buffer_size, uint32_t _recieve_buffer_size, uint8_t _every_time_send_max):
-        UartCom(_name,_prefer_cpu,_update_rate,_baudrate,_pathname, _send_buffer_size, _recieve_buffer_size, _every_time_send_max){}
+        MotorCan(_name,_prefer_cpu,_update_rate,_baudrate,_pathname, _send_buffer_size, _recieve_buffer_size, _every_time_send_max){}
         
         //收包检测助手
         uint32_t m_packet_recieve_allS = 0;  

@@ -8,6 +8,9 @@ include_directories(./include)
 include_directories(../Part_Period/include)
 include_directories(../data_struct)
 
+include_directories(../motor_can_cpp/src)
+include_directories(../motor_can_cpp/include/motor_can_cpp)
+
 set(SOURCES src/UartCommunication.cpp src/DM_USB2CAN.cpp)
 #Generate the shared library把该生成的项目创建为共享库（创建的内容为上面定义的SOURCES内容）
 add_library(HardwareCom SHARED ${SOURCES})
@@ -19,6 +22,7 @@ set_target_properties(HardwareCom PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CU
 #############################################可执行文件输出#############################################
 include_directories(../motor)
 add_executable(TestHardware test/test.cpp)
+# target_link_libraries(TestHardware PRIVATE motor_can_cpp)
 target_link_libraries(TestHardware PRIVATE HardwareCom)
 target_link_libraries(TestHardware PRIVATE Period)
 set_target_properties(TestHardware PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../build/bin)

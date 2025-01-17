@@ -7,7 +7,7 @@ int64_t time_sample_DM_USB2CAN = 0;
 void DM_USB2CAN::run()
 {
     //收包并发包
-    UartCom::run();
+    MotorCan::run();
     //收包处理
 
     if (Gloabl_Timer::hasElapsedMs(1000, time_sample_DM_USB2CAN))

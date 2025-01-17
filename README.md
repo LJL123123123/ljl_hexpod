@@ -102,3 +102,10 @@ https://blog.csdn.net/m0_57195758/article/details/136591106
 
 wsl-usb
 https://blog.csdn.net/qq_43066145/article/details/139812587
+
+wsl-can
+https://www.luheqiu.com/deane/889/
+
+wsl-git
+sudo nano /etc/hosts
+https://blog.csdn.net/qq_53810245/article/details/141389339

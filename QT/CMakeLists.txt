@@ -18,11 +18,11 @@ set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(CMAKE_PREFIX_PATH /home/roma/Qt/6.2.4/gcc_64)
-set(CMAKE_PREFIX_PATH "/home/roma/Qt/6.2.4/gcc_64")
-set(Qt6_DIR "/home/roma/Qt/6.2.4/gcc_64/lib/cmake/Qt6")
+set(CMAKE_PREFIX_PATH /usr/lib/aarch64-linux-gnu/)
+set(CMAKE_PREFIX_PATH "/usr/lib/aarch64-linux-gnu/")
+# set(Qt6_DIR "/home/ljl/Qt/6.8.0/gcc_arm64/lib/cmake/Qt6")
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
-find_package(Qt6 REQUIRED PrintSupport)
+find_package(Qt6 REQUIRED COMPONENTS PrintSupport)
 
 set(SOURCES
         mainwindow.cpp

@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build"
+			"value" : "/home/ljl/ljl_hexpod/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "25"
+			"value" : "27"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "4"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -158,8 +158,8 @@
 					"value" : "CXX compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/g++"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-10"
+			"value" : "/usr/bin/gcc-ar-13"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-10"
+			"value" : "/usr/bin/gcc-ranlib-13"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -286,8 +286,8 @@
 					"value" : "C compiler"
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/gcc"
+			"type" : "FILEPATH",
+			"value" : "/usr/bin/cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-10"
+			"value" : "/usr/bin/gcc-ar-13"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-10"
+			"value" : "/usr/bin/gcc-ranlib-13"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -519,11 +519,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/ljl/ljl_hexpod/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -607,7 +607,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1"
 		},
 		{
 			"name" : "CMAKE_HOME_DIRECTORY",
@@ -619,7 +619,199 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/dragon/hexapod/ljl_hexpod"
+			"value" : "/home/ljl/ljl_hexpod"
+		},
+		{
+			"name" : "CMAKE_INSTALL_BINDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "User executables (bin)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "bin"
+		},
+		{
+			"name" : "CMAKE_INSTALL_DATADIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Read-only architecture-independent data (DATAROOTDIR)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_DATAROOTDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Read-only architecture-independent data root (share)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "share"
+		},
+		{
+			"name" : "CMAKE_INSTALL_DOCDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Documentation root (DATAROOTDIR/doc/PROJECT_NAME)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "C header files (include)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "include"
+		},
+		{
+			"name" : "CMAKE_INSTALL_INFODIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Info documentation (DATAROOTDIR/info)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Object code libraries (lib)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "lib"
+		},
+		{
+			"name" : "CMAKE_INSTALL_LIBEXECDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Program executables (libexec)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "libexec"
+		},
+		{
+			"name" : "CMAKE_INSTALL_LOCALEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Locale-dependent data (DATAROOTDIR/locale)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_LOCALSTATEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Modifiable single-machine data (var)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "var"
+		},
+		{
+			"name" : "CMAKE_INSTALL_MANDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Man documentation (DATAROOTDIR/man)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_OLDINCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "C header files for non-gcc (/usr/include)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -634,6 +826,54 @@
 			"value" : "/usr/local"
 		},
 		{
+			"name" : "CMAKE_INSTALL_RUNSTATEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Run-time variable data (LOCALSTATEDIR/run)"
+				}
+			],
+			"type" : "PATH",
+			"value" : ""
+		},
+		{
+			"name" : "CMAKE_INSTALL_SBINDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "System admin executables (sbin)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "sbin"
+		},
+		{
+			"name" : "CMAKE_INSTALL_SHAREDSTATEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Modifiable architecture-independent data (com)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "com"
+		},
+		{
 			"name" : "CMAKE_INSTALL_SO_NO_EXE",
 			"properties" : 
 			[
@@ -644,6 +884,22 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "1"
+		},
+		{
+			"name" : "CMAKE_INSTALL_SYSCONFDIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Read-only single-machine data (etc)"
+				}
+			],
+			"type" : "PATH",
+			"value" : "etc"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -675,7 +931,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/make"
+			"value" : "/usr/bin/gmake"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -907,7 +1163,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.25"
+			"value" : "/usr/share/cmake-3.27"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1118,6 +1374,22 @@
 			"value" : "/usr/bin/strip"
 		},
 		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
+		},
+		{
 			"name" : "CMAKE_UNAME",
 			"properties" : 
 			[
@@ -1155,7 +1427,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]"
+			"value" : "[/usr/lib/aarch64-linux-gnu/libOpenGL.so][/usr/lib/aarch64-linux-gnu/libGLX.so][/usr/include][c ][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig",
@@ -1167,7 +1439,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/bin/pkg-config][v0.29.1()]"
+			"value" : "[/usr/bin/pkg-config][v1.8.1()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1227,7 +1499,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libxkbcommon.so][/usr/include][v0.10.0(0.5.0)]"
+			"value" : "[/usr/lib/aarch64-linux-gnu/libxkbcommon.so][/usr/include][v1.5.0(0.5.0)]"
 		},
 		{
 			"name" : "HAVE_STDATOMIC",
@@ -1251,7 +1523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build/Part_HardwareCom"
+			"value" : "/home/ljl/ljl_hexpod/build/Part_HardwareCom"
 		},
 		{
 			"name" : "HardwareCom_IS_TOP_LEVEL",
@@ -1275,10 +1547,42 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/Part_HardwareCom"
+			"value" : "/home/ljl/ljl_hexpod/Part_HardwareCom"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLES2_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLES3_INCLUDE_DIR",
 			"properties" : 
 			[
 				{
@@ -1339,7 +1643,39 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libEGL.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libEGL.so"
+		},
+		{
+			"name" : "OPENGL_gles2_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/aarch64-linux-gnu/libGLESv2.so"
+		},
+		{
+			"name" : "OPENGL_gles3_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/aarch64-linux-gnu/libGLESv2.so"
 		},
 		{
 			"name" : "OPENGL_glu_LIBRARY",
@@ -1371,7 +1707,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLX.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libGLX.so"
 		},
 		{
 			"name" : "OPENGL_opengl_LIBRARY",
@@ -1387,7 +1723,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libOpenGL.so"
 		},
 		{
 			"name" : "OPENGL_xmesa_INCLUDE_DIR",
@@ -1519,7 +1855,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-lxkbcommon"
 		},
 		{
 			"name" : "PKG_XKB_LDFLAGS_OTHER",
@@ -1543,7 +1879,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_LIBRARIES",
@@ -1567,7 +1903,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_LIBS",
@@ -1699,7 +2035,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-lxkbcommon"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_LDFLAGS_OTHER",
@@ -1747,7 +2083,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_LIBS",
@@ -1807,7 +2143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0.10.0"
+			"value" : "1.5.0"
 		},
 		{
 			"name" : "PKG_XKB_xkbcommon_INCLUDEDIR",
@@ -1867,7 +2203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build/Part_Period"
+			"value" : "/home/ljl/ljl_hexpod/build/Part_Period"
 		},
 		{
 			"name" : "Period_IS_TOP_LEVEL",
@@ -1891,7 +2227,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/Part_Period"
+			"value" : "/home/ljl/ljl_hexpod/Part_Period"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -1987,7 +2323,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_alloca",
@@ -2095,7 +2431,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx2",
@@ -2107,7 +2443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512bw",
@@ -2119,7 +2455,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512cd",
@@ -2131,7 +2467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512dq",
@@ -2143,7 +2479,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512er",
@@ -2155,7 +2491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512f",
@@ -2167,7 +2503,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512ifma",
@@ -2179,7 +2515,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512pf",
@@ -2191,7 +2527,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512vbmi",
@@ -2203,7 +2539,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_avx512vbmi2",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: avx512vbmi2 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_avx512vl",
@@ -2215,7 +2563,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_backtrace",
@@ -2638,6 +2986,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_cxx2b",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: cxx2b (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_datawidgetmapper",
 			"properties" : 
 			[
@@ -2746,6 +3106,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_developer_build",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: developer_build (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_dial",
 			"properties" : 
 			[
@@ -2840,6 +3212,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_dladdr",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: dladdr (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_dlopen",
@@ -3007,7 +3391,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_eglfs_mali",
@@ -3163,7 +3547,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_filedialog",
@@ -3262,18 +3646,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "QT_FEATURE_force_debug_info",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: force_debug_info (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_forkfd_pidfd",
 			"properties" : 
 			[
@@ -3364,6 +3736,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: future (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gbm",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gbm (from target Qt6::Gui)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3520,18 +3904,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: harfbuzz (from target Qt6::Gui)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_headersclean",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: headersclean (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3931,7 +4303,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_libinput_axis_api",
@@ -3943,7 +4315,19 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_libinput_hires_wheel_support",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: libinput_hires_wheel_support (from target Qt6::Gui)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_library",
@@ -3967,7 +4351,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_lineedit",
@@ -4123,7 +4507,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_mips_dsp",
@@ -4171,7 +4555,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_multiprocess",
@@ -4195,7 +4579,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_network",
@@ -4208,6 +4592,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_no_direct_extern_access",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: no_direct_extern_access (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_no_prefix",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: no_prefix (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_opengl",
@@ -4546,18 +4954,6 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "QT_FEATURE_properties",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: properties (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
 			"name" : "QT_FEATURE_proxymodel",
 			"properties" : 
 			[
@@ -4651,7 +5047,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_rdseed",
@@ -4663,7 +5059,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_reduce_exports",
@@ -4687,7 +5083,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_regularexpression",
@@ -4711,7 +5107,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_renameat2",
@@ -4723,7 +5119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_resizehandler",
@@ -4747,7 +5143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_rubberband",
@@ -4807,7 +5203,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_sessionmanager",
@@ -4855,7 +5251,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_shared",
@@ -4900,18 +5296,6 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: signaling_nan (from target Qt6::Core)"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
-		},
-		{
-			"name" : "QT_FEATURE_simdAlways",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Qt feature: simdAlways (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -5035,7 +5419,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_sse3",
@@ -5047,7 +5431,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_sse4_1",
@@ -5059,7 +5443,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_sse4_2",
@@ -5071,7 +5455,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_ssse3",
@@ -5083,7 +5467,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_stack_protector_strong",
@@ -5180,6 +5564,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_stdlib_libcpp",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: stdlib_libcpp (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_stringlistmodel",
@@ -5299,7 +5695,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_freetype",
@@ -5323,7 +5719,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_jpeg",
@@ -5335,7 +5731,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_libb2",
@@ -5347,7 +5743,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_pcre2",
@@ -5359,7 +5755,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_png",
@@ -5371,7 +5767,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_textmarkdownreader",
@@ -5383,7 +5779,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_system_xcb_xinput",
@@ -5743,7 +6139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_tuiotouch",
@@ -5848,6 +6244,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: use_mold_linker (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_vaes",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: vaes (from target Qt6::Core)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -6055,7 +6463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "QT_FEATURE_xcb_xlib",
@@ -6175,7 +6583,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "OFF"
+			"value" : "ON"
 		},
 		{
 			"name" : "Qt6CoreTools_DIR",
@@ -6187,7 +6595,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6CoreTools"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6CoreTools"
 		},
 		{
 			"name" : "Qt6Core_DIR",
@@ -6199,7 +6607,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Core"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6DBusTools_DIR",
@@ -6211,7 +6619,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6DBusTools"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6DBusTools"
 		},
 		{
 			"name" : "Qt6DBus_DIR",
@@ -6223,7 +6631,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6DBus"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6DBus"
 		},
 		{
 			"name" : "Qt6GuiTools_DIR",
@@ -6235,7 +6643,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6GuiTools"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6GuiTools"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -6247,7 +6655,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Gui"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6PrintSupport_DIR",
@@ -6259,7 +6667,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6PrintSupport"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6PrintSupport"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -6271,7 +6679,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6WidgetsTools"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -6283,7 +6691,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Widgets"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "Qt6_DIR",
@@ -6295,7 +6703,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6"
+			"value" : "/usr/lib/aarch64-linux-gnu/cmake/Qt6"
 		},
 		{
 			"name" : "Robotrunner_BINARY_DIR",
@@ -6307,7 +6715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build/Part_Robotrunner"
+			"value" : "/home/ljl/ljl_hexpod/build/Part_Robotrunner"
 		},
 		{
 			"name" : "Robotrunner_IS_TOP_LEVEL",
@@ -6331,19 +6739,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/Part_Robotrunner"
-		},
-		{
-			"name" : "THREADS_HAVE_PTHREAD_ARG",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Result of TRY_COMPILE"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "TRUE"
+			"value" : "/home/ljl/ljl_hexpod/Part_Robotrunner"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6407,7 +6803,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libvulkan.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libvulkan.so"
 		},
 		{
 			"name" : "XKB_INCLUDE_DIR",
@@ -6431,7 +6827,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libxkbcommon.so"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -6444,6 +6840,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "CMAKE_INSTALL_PREFIX during last run"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/local"
 		},
 		{
 			"name" : "__pkg_config_arguments_PKG_XKB",
@@ -6503,7 +6911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod/build"
+			"value" : "/home/ljl/ljl_hexpod/build"
 		},
 		{
 			"name" : "code_struct_IS_TOP_LEVEL",
@@ -6527,7 +6935,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/dragon/hexapod/ljl_hexpod"
+			"value" : "/home/ljl/ljl_hexpod"
 		},
 		{
 			"name" : "libevdev_CFLAGS",
@@ -6611,7 +7019,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-levdev"
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-levdev"
 		},
 		{
 			"name" : "libevdev_LDFLAGS_OTHER",
@@ -6635,7 +7043,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "libevdev_LIBRARIES",
@@ -6659,7 +7067,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "libevdev_LIBS",
@@ -6791,7 +7199,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-levdev"
+			"value" : "-L/usr/lib/aarch64-linux-gnu;-levdev"
 		},
 		{
 			"name" : "libevdev_STATIC_LDFLAGS_OTHER",
@@ -6839,7 +7247,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		},
 		{
 			"name" : "libevdev_STATIC_LIBS",
@@ -6899,7 +7307,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1.9.0"
+			"value" : "1.13.1"
 		},
 		{
 			"name" : "libevdev_libevdev_INCLUDEDIR",
@@ -6963,7 +7371,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libxkbcommon.so"
 		},
 		{
 			"name" : "pkgcfg_lib_libevdev_evdev",
@@ -6979,7 +7387,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libevdev.so"
+			"value" : "/usr/lib/aarch64-linux-gnu/libevdev.so"
 		},
 		{
 			"name" : "prefix_result",
@@ -6991,7 +7399,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib/aarch64-linux-gnu"
 		}
 	],
 	"kind" : "cache",

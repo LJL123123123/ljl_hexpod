@@ -11,6 +11,8 @@ ulimit -c unlimited
 pwd
 sudo ./bin/code_struct
 
+sudo apt install libevdev-dev
+
 <!-- 批量显示图片的函数 -->
 // const int imagesPerRow = 4; // 每行显示4张图片
 // const int imagesPerCol = 4; // 每列显示4张图片
@@ -89,9 +91,9 @@ rm -rf ./*
 在class RobotRunner中修改 PeriodicTask(0.0015,"robotrunner",100,sched_get_priority_max(SCHED_FIFO),SCHED_FIFO) 的第一个参数就可以修改fps
 具体计算为x=1/fps
 
-QTver 6.2.4
+ver 6.2.4
 
-libQt6PrintSupport.so.6: cannot open shared object file: No such file or directory-------result
+lib6PrintSupport.so.6: cannot open shared object file: No such file or directory-------result
 https://blog.csdn.net/learning_man/article/details/120274904
 
 cmake ver

@@ -1,4 +1,4 @@
-# Install script for directory: /home/dragon/桌面/bishe/hexpod_ljl/hexpod_ljl/QT
+# Install script for directory: /home/ljl/ljl_hexpod/QT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dragon/桌面/bishe/hexpod_ljl/hexpod_ljl/QT/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ljl/ljl_hexpod/QT/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

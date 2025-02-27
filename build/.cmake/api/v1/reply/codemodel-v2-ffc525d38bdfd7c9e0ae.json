@@ -12,7 +12,7 @@
 						2,
 						3
 					],
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -26,7 +26,7 @@
 				},
 				{
 					"build" : "Part_Period",
-					"jsonFile" : "directory-Part_Period-Debug-e17bca81aa9f74f00856.json",
+					"jsonFile" : "directory-Part_Period-e17bca81aa9f74f00856.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -42,7 +42,7 @@
 				},
 				{
 					"build" : "Part_HardwareCom",
-					"jsonFile" : "directory-Part_HardwareCom-Debug-fc6ec40c401c9f190581.json",
+					"jsonFile" : "directory-Part_HardwareCom-fc6ec40c401c9f190581.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -58,7 +58,7 @@
 				},
 				{
 					"build" : "Part_Robotrunner",
-					"jsonFile" : "directory-Part_Robotrunner-Debug-7edbd7ba6b4646e73cd3.json",
+					"jsonFile" : "directory-Part_Robotrunner-7edbd7ba6b4646e73cd3.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.20"
@@ -73,7 +73,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -138,49 +138,49 @@
 				{
 					"directoryIndex" : 2,
 					"id" : "HardwareCom::@cc2b063093f95bb0c262",
-					"jsonFile" : "target-HardwareCom-Debug-8ef9d9a4570bd736bc3b.json",
+					"jsonFile" : "target-HardwareCom-dec8e964508ac1fa268e.json",
 					"name" : "HardwareCom",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "Period::@8237e40199828236782a",
-					"jsonFile" : "target-Period-Debug-a70eb1c53a6c0da3d384.json",
+					"jsonFile" : "target-Period-19e52698ae8eed428b4d.json",
 					"name" : "Period",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "Robotrunner::@b623aefb1bcd059774e7",
-					"jsonFile" : "target-Robotrunner-Debug-b07c76733d7d6d421fb7.json",
+					"jsonFile" : "target-Robotrunner-0e2c5ebb1579c408d5fa.json",
 					"name" : "Robotrunner",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "TestHardware::@cc2b063093f95bb0c262",
-					"jsonFile" : "target-TestHardware-Debug-0572c63277981b62b5ca.json",
+					"jsonFile" : "target-TestHardware-1fb4cbc19ca597a5ac30.json",
 					"name" : "TestHardware",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "TestPeriod::@8237e40199828236782a",
-					"jsonFile" : "target-TestPeriod-Debug-3da466090b07fcf98348.json",
+					"jsonFile" : "target-TestPeriod-d821dac3332326bfa921.json",
 					"name" : "TestPeriod",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "TestRobotrunner::@b623aefb1bcd059774e7",
-					"jsonFile" : "target-TestRobotrunner-Debug-4c393a8acb4b1d36e044.json",
+					"jsonFile" : "target-TestRobotrunner-5f327a681105fe61bdf5.json",
 					"name" : "TestRobotrunner",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "code_struct::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-code_struct-Debug-a3404f571c0462a7d627.json",
+					"jsonFile" : "target-code_struct-221e40f91772b60ba71f.json",
 					"name" : "code_struct",
 					"projectIndex" : 0
 				}
@@ -190,12 +190,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/dragon/hexapod/ljl_hexpod/build",
-		"source" : "/home/dragon/hexapod/ljl_hexpod"
+		"build" : "/home/ljl/ljl_hexpod/build",
+		"source" : "/home/ljl/ljl_hexpod"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 6
 	}
 }

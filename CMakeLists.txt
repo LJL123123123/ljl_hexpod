@@ -18,7 +18,7 @@ add_subdirectory(Part_Robotrunner)
 
 ############################################设置主函数############################################
 #查找外来库
-set(CMAKE_PREFIX_PATH /home/dragon/Qt/6.2.4/gcc_64)
+set(CMAKE_PREFIX_PATH /usr/lib/aarch64-linux-gnu/)
 # 查找并加载 PkgConfig 模块
 # PkgConfig 是一个用于管理编译过程中库的路径和编译器标志的工具
 # REQUIRED 关键字表示如果 PkgConfig 没有找到，CMake 将停止并报错。
@@ -61,7 +61,7 @@ target_link_libraries(code_struct PRIVATE ${libevdev_LIBRARIES})
 # target_link_libraries(code_struct PRIVATE ${OpenCV_LIBRARIES})
 target_link_libraries(code_struct PRIVATE Qt6::Widgets)
 target_link_libraries(code_struct PRIVATE Qt6::PrintSupport)
-target_link_libraries(code_struct PRIVATE /home/dragon/Qt/6.2.4/gcc_64/lib/)
+# target_link_libraries(code_struct PRIVATE /home/ljl/Qt/6.8.0/gcc_arm64/lib/)
 target_link_libraries(code_struct PRIVATE pthread)
 
 # 导入先前编译生成的

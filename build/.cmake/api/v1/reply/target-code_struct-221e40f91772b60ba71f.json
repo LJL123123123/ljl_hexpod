@@ -17,24 +17,23 @@
 			"find_package",
 			"set_property",
 			"find_dependency",
-			"_qt_internal_find_dependencies",
+			"_qt_internal_find_third_party_dependencies",
+			"_qt_internal_find_qt_dependencies",
 			"include_directories"
 		],
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Config.cmake",
-			"/usr/share/cmake-3.25/Modules/FindThreads.cmake",
-			"/usr/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6/Qt6Dependencies.cmake",
-			"/usr/share/cmake-3.25/Modules/FindOpenGL.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6/FindWrapOpenGL.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
-			"/home/dragon/Qt/6.2.4/gcc_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
+			"/usr/share/cmake-3.27/Modules/FindOpenGL.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake",
+			"/usr/share/cmake-3.27/Modules/CMakeFindDependencyMacro.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6Gui/Qt6GuiDependencies.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfig.cmake",
+			"/usr/lib/aarch64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
 		],
 		"nodes" : 
 		[
@@ -108,7 +107,7 @@
 			{
 				"command" : 4,
 				"file" : 3,
-				"line" : 209,
+				"line" : 167,
 				"parent" : 11
 			},
 			{
@@ -118,7 +117,7 @@
 			{
 				"command" : 3,
 				"file" : 2,
-				"line" : 50,
+				"line" : 62,
 				"parent" : 13
 			},
 			{
@@ -128,165 +127,139 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 56,
+				"line" : 71,
 				"parent" : 15
 			},
 			{
 				"command" : 3,
-				"file" : 3,
-				"line" : 171,
-				"parent" : 11
+				"file" : 2,
+				"line" : 50,
+				"parent" : 13
 			},
 			{
-				"file" : 6,
+				"file" : 10,
 				"parent" : 17
 			},
 			{
-				"command" : 6,
-				"file" : 6,
-				"line" : 48,
+				"command" : 8,
+				"file" : 10,
+				"line" : 39,
 				"parent" : 18
 			},
 			{
-				"command" : 4,
-				"file" : 5,
-				"line" : 47,
+				"command" : 6,
+				"file" : 7,
+				"line" : 108,
 				"parent" : 19
 			},
 			{
-				"file" : 4,
+				"command" : 4,
+				"file" : 6,
+				"line" : 76,
 				"parent" : 20
 			},
 			{
-				"command" : 5,
-				"file" : 4,
-				"line" : 240,
+				"file" : 9,
 				"parent" : 21
 			},
 			{
 				"command" : 3,
-				"file" : 2,
-				"line" : 40,
-				"parent" : 13
+				"file" : 9,
+				"line" : 50,
+				"parent" : 22
 			},
 			{
-				"file" : 12,
+				"file" : 8,
 				"parent" : 23
 			},
 			{
 				"command" : 7,
-				"file" : 12,
-				"line" : 96,
+				"file" : 8,
+				"line" : 30,
 				"parent" : 24
 			},
 			{
 				"command" : 6,
-				"file" : 11,
-				"line" : 14,
+				"file" : 7,
+				"line" : 33,
 				"parent" : 25
 			},
 			{
 				"command" : 4,
-				"file" : 5,
-				"line" : 47,
+				"file" : 6,
+				"line" : 76,
 				"parent" : 26
 			},
 			{
-				"file" : 10,
+				"file" : 5,
 				"parent" : 27
-			},
-			{
-				"command" : 3,
-				"file" : 10,
-				"line" : 40,
-				"parent" : 28
-			},
-			{
-				"file" : 9,
-				"parent" : 29
-			},
-			{
-				"command" : 6,
-				"file" : 9,
-				"line" : 48,
-				"parent" : 30
 			},
 			{
 				"command" : 4,
 				"file" : 5,
-				"line" : 47,
-				"parent" : 31
-			},
-			{
-				"file" : 8,
-				"parent" : 32
-			},
-			{
-				"command" : 4,
-				"file" : 8,
 				"line" : 10,
-				"parent" : 33
+				"parent" : 28
 			},
 			{
-				"file" : 7,
-				"parent" : 34
+				"file" : 4,
+				"parent" : 29
 			},
 			{
 				"command" : 5,
-				"file" : 7,
-				"line" : 512,
-				"parent" : 35
+				"file" : 4,
+				"line" : 682,
+				"parent" : 30
 			},
 			{
 				"command" : 2,
-				"file" : 7,
-				"line" : 510,
-				"parent" : 35
+				"file" : 4,
+				"line" : 680,
+				"parent" : 30
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 41,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 43,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 44,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 45,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 46,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 47,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 49,
 				"parent" : 0
 			},
 			{
-				"command" : 8,
+				"command" : 9,
 				"file" : 0,
 				"line" : 52,
 				"parent" : 0
@@ -299,18 +272,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
-					"backtrace" : 9,
-					"fragment" : "-fPIC"
-				},
-				{
-					"backtrace" : 9,
-					"fragment" : "-pthread"
-				},
-				{
-					"fragment" : "-std=gnu++2a"
+					"fragment" : "-std=gnu++20"
 				}
 			],
 			"defines" : 
@@ -324,6 +286,10 @@
 					"define" : "QT_GUI_LIB"
 				},
 				{
+					"backtrace" : 9,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
 					"backtrace" : 5,
 					"define" : "QT_PRINTSUPPORT_LIB"
 				},
@@ -335,66 +301,66 @@
 			"includes" : 
 			[
 				{
+					"backtrace" : 33,
+					"path" : "/home/ljl/ljl_hexpod/./Part_Robotrunner/include"
+				},
+				{
+					"backtrace" : 34,
+					"path" : "/home/ljl/ljl_hexpod/./Part_HardwareCom/include"
+				},
+				{
+					"backtrace" : 35,
+					"path" : "/home/ljl/ljl_hexpod/./Part_Period/include"
+				},
+				{
+					"backtrace" : 36,
+					"path" : "/home/ljl/ljl_hexpod/./QT"
+				},
+				{
+					"backtrace" : 37,
+					"path" : "/home/ljl/ljl_hexpod/./Eigen"
+				},
+				{
 					"backtrace" : 38,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./Part_Robotrunner/include"
+					"path" : "/home/ljl/ljl_hexpod/./data_struct"
 				},
 				{
 					"backtrace" : 39,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./Part_HardwareCom/include"
+					"path" : "/home/ljl/ljl_hexpod/./include"
 				},
 				{
 					"backtrace" : 40,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./Part_Period/include"
-				},
-				{
-					"backtrace" : 41,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./QT"
-				},
-				{
-					"backtrace" : 42,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./Eigen"
-				},
-				{
-					"backtrace" : 43,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./data_struct"
-				},
-				{
-					"backtrace" : 44,
-					"path" : "/home/dragon/hexapod/ljl_hexpod/./include"
-				},
-				{
-					"backtrace" : 45,
 					"path" : "/usr/include/libevdev-1.0"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/include/QtWidgets"
+					"path" : "/usr/include/aarch64-linux-gnu/qt6/QtWidgets"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/include"
+					"path" : "/usr/include/aarch64-linux-gnu/qt6"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/include/QtCore"
+					"path" : "/usr/include/aarch64-linux-gnu/qt6/QtCore"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/mkspecs/linux-g++"
+					"path" : "/usr/lib/aarch64-linux-gnu/qt6/mkspecs/linux-g++"
 				},
 				{
 					"backtrace" : 9,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/include/QtGui"
+					"path" : "/usr/include/aarch64-linux-gnu/qt6/QtGui"
 				},
 				{
 					"backtrace" : 5,
 					"isSystem" : true,
-					"path" : "/home/dragon/Qt/6.2.4/gcc_64/include/QtPrintSupport"
+					"path" : "/usr/include/aarch64-linux-gnu/qt6/QtPrintSupport"
 				}
 			],
 			"language" : "CXX",
@@ -434,25 +400,21 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/dragon/hexapod/ljl_hexpod/lib:/home/dragon/Qt/6.2.4/gcc_64/lib",
+				"fragment" : "-Wl,-rpath,/home/ljl/ljl_hexpod/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/dragon/hexapod/ljl_hexpod/lib/libHardwareCom.so",
+				"fragment" : "/home/ljl/ljl_hexpod/lib/libHardwareCom.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/dragon/hexapod/ljl_hexpod/lib/libRobotrunner.so",
+				"fragment" : "/home/ljl/ljl_hexpod/lib/libRobotrunner.so",
 				"role" : "libraries"
 			},
 			{
@@ -462,7 +424,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "/home/dragon/Qt/6.2.4/gcc_64/lib/libQt6PrintSupport.so.6.2.4",
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libQt6PrintSupport.so.6.4.2",
 				"role" : "libraries"
 			},
 			{
@@ -472,12 +434,12 @@
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/home/dragon/hexapod/ljl_hexpod/lib/libRealtimeCurvePlot.so",
+				"fragment" : "/home/ljl/ljl_hexpod/lib/libRealtimeCurvePlot.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "/home/dragon/hexapod/ljl_hexpod/lib/libPeriod.so",
+				"fragment" : "/home/ljl/ljl_hexpod/lib/libPeriod.so",
 				"role" : "libraries"
 			},
 			{
@@ -487,32 +449,27 @@
 			},
 			{
 				"backtrace" : 9,
-				"fragment" : "/home/dragon/Qt/6.2.4/gcc_64/lib/libQt6Widgets.so.6.2.4",
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libQt6Widgets.so.6.4.2",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 16,
-				"fragment" : "/home/dragon/Qt/6.2.4/gcc_64/lib/libQt6Gui.so.6.2.4",
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libQt6Gui.so.6.4.2",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 16,
-				"fragment" : "/home/dragon/Qt/6.2.4/gcc_64/lib/libQt6Core.so.6.2.4",
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libQt6Core.so.6.4.2",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 22,
-				"fragment" : "-pthread",
+				"backtrace" : 31,
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libGLX.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 36,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libGLX.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 37,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
+				"backtrace" : 32,
+				"fragment" : "/usr/lib/aarch64-linux-gnu/libOpenGL.so",
 				"role" : "libraries"
 			}
 		],

@@ -20,7 +20,6 @@
 class HexPodController : public RobotController
 {
     public:
-        
         DMmotor m_LegMotor[3*LEG_NUM];
         Module<HexPodController> m_update_module;
 
@@ -41,14 +40,14 @@ class HexPodController : public RobotController
         struct Leg legs[LEG_NUM];
                 
         void init() override{
-            std::cout<<11<<std::endl;
             DM_USB2CAN* massage_ptr = dynamic_cast<DM_USB2CAN*> (PeriodicTaskManager::Instance()->FindTask("DM_USB2CAN1"));/*多写一个变量*/
             DM_USB2CAN* massage_ptr1 = dynamic_cast<DM_USB2CAN*> (PeriodicTaskManager::Instance()->FindTask("DM_USB2CAN2"));
             if(massage_ptr == nullptr || massage_ptr1 == nullptr)
             {
                 fprintf(stderr,"can not find communication interface\n");
                 return;
-            }            
+            }
+       
 
             legs[0].gama =  degree2rad(-20.0);
             legs[2].gama =  degree2rad(0.0);
@@ -432,6 +431,10 @@ class HexPodController : public RobotController
        
         void mv_stop()
         {   
+            if(start == true)
+            {
+                std::cout << "mv_stop运行" << std::endl;
+            }
         num = 0 ;
         double q[] = { 0,0,0,0 };
         hex_omega << 0,0,0;
@@ -456,7 +459,6 @@ class HexPodController : public RobotController
         // leg_controll(4, q);
         
         start = false;
-        //std::cout << start << std::endl;
         }
 
         enum STATE {
@@ -467,7 +469,7 @@ class HexPodController : public RobotController
             LEFT,
             RESET
         };
-        STATE hex_state;
+        STATE hex_state = STOP;
         // static int old_key = -1;
 
         double zs = 0;

@@ -84,11 +84,9 @@ class UartCom : public PeriodicTask{
 
             return static_cast<uint32_t>(ssize_value);
         }
-    
-    protected:
         CircularQueue<uint8_t> m_recieve_buffer;
         CircularQueue<Msg> m_send_buffer;
-
+    protected:
         std::shared_mutex recieve_quene_mutex;
         std::shared_mutex send_quene_mutex;
     private:

@@ -4,6 +4,19 @@
 #include <unordered_map>
 #include <cstring>
 
+#include "PeriodicTask.hpp"
+#include "CircularQueue.hpp"
+#include "Msg.hpp"
+#include <shared_mutex>
+#include <mutex>
+#include <iomanip>
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <unistd.h>
+#include <cstring>
+
 #pragma pack(push, 1) // Ensure no padding between struct members
 struct DM_USB2CAN_Message {
     uint8_t header[2];             // Frame header

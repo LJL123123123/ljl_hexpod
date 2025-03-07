@@ -116,7 +116,7 @@ public:
         send_msg.content_ptr->can_id = id + id_mask;
         uint8_t temp_data[8] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xfc};
         memcpy(send_msg.content_ptr->data,&temp_data,8);     
-        m_msg_center->Others_enquene_send(send_msg); 
+        m_msg_center->Others_enquene_send(send_msg);   
     }
 
     void disable_motor()
@@ -161,7 +161,7 @@ public:
             DM_USB2CAN_Send_Msg send_msg;
             send_msg.content_ptr->can_id = id + id_mask;
             memcpy(send_msg.content_ptr->data,&temp_data,8);     
-            m_msg_center->Others_enquene_send(send_msg);   
+            m_msg_center->Others_enquene_send(send_msg); 
         }
         else if(m_DMMotorMode == DMMode::POS_VEC)
         {

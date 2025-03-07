@@ -13,6 +13,13 @@
 #include <asm/termbits.h>
 #include <string.h>
 
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <unistd.h>
+#include <cstring>
+
 template <>
 void CircularQueue<uint8_t>::printcontent() const {
     if (isEmpty()) {
@@ -41,6 +48,8 @@ void UartCom::run()
         // std::cout << std::dec << "send_rate " << m_packet_send_allS<< std::endl;
     }
 
+
+
     if (!m_send_buffer.isEmpty())
     {
         //加写锁
@@ -51,11 +60,58 @@ void UartCom::run()
         {
             Msg Send_msg = m_send_buffer.dequeue();  // 从队列中取出消息
             //Send_msg.printHex();
+            // 提取canid, can数据和校验
+            uint8_t canid = Send_msg.msg_content[13];
+            std::vector<uint8_t> can_data(Send_msg.msg_content.begin() + 15+6, Send_msg.msg_content.begin() + 22+7);
+            uint8_t checksum = Send_msg.msg_content[22+7];
+            
+            // 打印提取出来的数据
+            // std::cout << "CAN ID: 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(canid) << std::endl;
+            // std::cout << "CAN Data: ";
+            // for (const auto& byte : can_data) {
+            //     std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(byte) << " ";
+            // }
+            // std::cout << std::endl;
+            // std::cout << "Checksum: 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(checksum) << std::endl;
+
+            // 将canid，can_data，checksum发送到can
+            struct can_frame frame;
+            frame.can_id = canid;
+            frame.can_dlc = can_data.size();
+            std::copy(can_data.begin(), can_data.end(), frame.data);
+            frame.data[can_data.size()] = checksum;
+
+            int s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
+            if (s < 0) {
+                perror("Socket");
+                return;
+            }
+
+            struct ifreq ifr;
+            strcpy(ifr.ifr_name, uartname);
+            ioctl(s, SIOCGIFINDEX, &ifr);
+
+            struct sockaddr_can addr;
+            addr.can_family = AF_CAN;
+            addr.can_ifindex = ifr.ifr_ifindex;
+
+            if (bind(s, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
+                perror("Bind");
+                close(s);
+                return;
+            }
+
+            if (write(s, &frame, sizeof(frame)) != sizeof(frame)) {
+                perror("Write");
+            }
+
+            close(s);
+
             const char* char_data = reinterpret_cast<const char*>(Send_msg.msg_content.data());  // 获取数据
-            if(uart_write(fd, char_data, Send_msg.msg_content.size()) > 0)
-            {
+            // if(uart_write(fd, char_data, Send_msg.msg_content.size()) > 0)
+            // {
                 ++m_packet_send_all;
-            }  // 写入数据
+            // }  // 写入数据
         }
     }
     read_line(fd);
@@ -74,17 +130,18 @@ void UartCom::cleanup()
 
 bool UartCom::Change_uart_priority()
 {
-    std::string command = "sudo chmod 777 " + std::string(uartname);
+    // std::string command = "sudo chmod 777 " + std::string(uartname);
+    std::string command = "sudo ip link set " + std::string(uartname) + " up type can bitrate 1000000";
 
     // 执行系统命令
     int result = std::system(command.c_str());
 
-    if (result != 0) {
-        std::cerr << "Failed to execute command: " << command << std::endl;
-        return true;
-    }
+    // if (result != 0) {
+    //     std::cerr << "Failed to execute command: " << command << std::endl;
+    //     return true;
+    // }
 
-    std::cout << "Command executed successfully: " << command << std::endl;
+    // std::cout << "Command executed successfully: " << command << std::endl;
     return false;
 }
 
@@ -182,58 +239,58 @@ int UartCom::uart_write(int fd,const char *w_buf,size_t len)
 int UartCom::uart_open(int fd,const char *pathname){
     assert(pathname);
     /*打开串口*/
-    fd = open(pathname,O_RDWR|O_NOCTTY|O_NDELAY);
-    if(fd == -1)
-    {
-        perror("Open UART failed!");
-        return -1;
-    }
+    // fd = open(pathname,O_RDWR|O_NOCTTY|O_NDELAY);
+    // if(fd == -1)
+    // {
+    //     perror("Open UART failed!");
+    //     return -1;
+    // }
     return fd;
 }
 
 //设置自定义波特率接口
 int UartCom::uart_set(int fd, int speed) {
-  struct termios2 tty;
-  //使用 ioctl 系统调用获取当前串行端口的设置，
-  //并存储到 tty 结构体中。
-  //TCGETS2 是一个标志，表示获取 termios2 结构体。
-  ioctl(fd, TCGETS2, &tty);
-  //清除 c_cflag 中的波特率标志（CBAUD），
-  //然后设置为允许自定义波特率（BOTHER）。
-  tty.c_cflag &= ~CBAUD;
-  tty.c_cflag |= BOTHER;
-  //清零对应数据位并重新设置为8位
-  tty.c_cflag = (tty.c_cflag & ~CSIZE) | CS8;  
+//   struct termios2 tty;
+//   //使用 ioctl 系统调用获取当前串行端口的设置，
+//   //并存储到 tty 结构体中。
+//   //TCGETS2 是一个标志，表示获取 termios2 结构体。
+//   ioctl(fd, TCGETS2, &tty);
+//   //清除 c_cflag 中的波特率标志（CBAUD），
+//   //然后设置为允许自定义波特率（BOTHER）。
+//   tty.c_cflag &= ~CBAUD;
+//   tty.c_cflag |= BOTHER;
+//   //清零对应数据位并重新设置为8位
+//   tty.c_cflag = (tty.c_cflag & ~CSIZE) | CS8;  
 
-  //设置输入和输出的波特率为 speed
-  tty.c_ispeed = speed;
-  tty.c_ospeed = speed;
+//   //设置输入和输出的波特率为 speed
+//   tty.c_ispeed = speed;
+//   tty.c_ospeed = speed;
 
-  //禁用 IGNBRK 标志，以便在波特率不匹配时不忽略断点符（break characters）
-  tty.c_iflag &= ~IGNBRK; 
-  //清除 c_lflag，禁用所有本地模式标志（无信号字符，无回显，无规范处理）
-  tty.c_lflag = 0;     
-  //清除 c_oflag，禁用所有输出模式标志（无重新映射，无延迟）
-  tty.c_oflag = 0;      
-  //设置控制字符数组中的 VMIN 为0，表示读取时不阻塞；
-  //VTIME 为1，表示读取超时时间为0秒。有数据就返回，没数据就返回0
-  tty.c_cc[VMIN] = 0;   
-  tty.c_cc[VTIME] = 0;  
-  //禁用软件流控制（IXON、IXOFF、IXANY）
-  tty.c_iflag &= ~(IXON | IXOFF | IXANY);  
+//   //禁用 IGNBRK 标志，以便在波特率不匹配时不忽略断点符（break characters）
+//   tty.c_iflag &= ~IGNBRK; 
+//   //清除 c_lflag，禁用所有本地模式标志（无信号字符，无回显，无规范处理）
+//   tty.c_lflag = 0;     
+//   //清除 c_oflag，禁用所有输出模式标志（无重新映射，无延迟）
+//   tty.c_oflag = 0;      
+//   //设置控制字符数组中的 VMIN 为0，表示读取时不阻塞；
+//   //VTIME 为1，表示读取超时时间为0秒。有数据就返回，没数据就返回0
+//   tty.c_cc[VMIN] = 0;   
+//   tty.c_cc[VTIME] = 0;  
+//   //禁用软件流控制（IXON、IXOFF、IXANY）
+//   tty.c_iflag &= ~(IXON | IXOFF | IXANY);  
 
-  //设置 c_cflag，忽略调制解调器控制线（CLOCAL），并启用接收器（CREAD）
-  tty.c_cflag |= (CLOCAL | CREAD); 
-  //关闭奇偶校验（PARENB），并且清除任何奇偶校验类型设置（PARODD）
-  //设置为一位停止位（清除 CSTOPB）
-  //禁用硬件流控制（清除 CRTSCTS）
-  tty.c_cflag &= ~(PARENB | PARODD);     
-  tty.c_cflag &= ~CSTOPB;
-  tty.c_cflag &= ~CRTSCTS;
-  // cfmakeraw(&tty);
+//   //设置 c_cflag，忽略调制解调器控制线（CLOCAL），并启用接收器（CREAD）
+//   tty.c_cflag |= (CLOCAL | CREAD); 
+//   //关闭奇偶校验（PARENB），并且清除任何奇偶校验类型设置（PARODD）
+//   //设置为一位停止位（清除 CSTOPB）
+//   //禁用硬件流控制（清除 CRTSCTS）
+//   tty.c_cflag &= ~(PARENB | PARODD);     
+//   tty.c_cflag &= ~CSTOPB;
+//   tty.c_cflag &= ~CRTSCTS;
+//   // cfmakeraw(&tty);
 
-  //使用 ioctl 系统调用将配置的设置应用到串行端口,同上
-  ioctl(fd, TCSETS2, &tty);
+//   //使用 ioctl 系统调用将配置的设置应用到串行端口,同上
+//   ioctl(fd, TCSETS2, &tty);
   return 0;
 }
 

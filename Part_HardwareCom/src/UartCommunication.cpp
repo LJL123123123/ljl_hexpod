@@ -135,6 +135,11 @@ void UartCom::read_line(int fd)
     if(total_read_num > 0)
     {
         m_recieve_buffer.enqueue(buffer,total_read_num);
+        std::cout << "Received data: ";
+        for (size_t i = 0; i < total_read_num; ++i) {
+            std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(buffer[i]) << " ";
+        }
+        std::cout << std::endl;
         data_num+=total_read_num;
     }
 

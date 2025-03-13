@@ -269,9 +269,15 @@ public:
     {
         uint8_t msg_copy[8];
         m_msg_center->getSolver(id,msg_copy);
+        for (int i = 0; i < 8; ++i) {
+            printf("msg_copy[%d] = 0x%02x\n", i, msg_copy[i]);
+        }
         uint16_t packet_pos = static_cast<uint16_t>(msg_copy[1] << 8) | msg_copy[2];
         uint16_t packet_vec = static_cast<uint16_t>(msg_copy[3] << 4) | (msg_copy[4] >> 4);
         uint16_t packet_torque = static_cast<uint16_t>((msg_copy[4] & 0xF) << 8) | msg_copy[5];
+        printf("packet_pos = %u\n", packet_pos);
+        printf("packet_vec = %u\n", packet_vec);
+        printf("packet_torque = %u\n", packet_torque);
 
         feedback_pos = uint_to_float(packet_pos, P_MIN, P_MAX, 16);
         feedback_vel = uint_to_float(packet_vec, V_MIN, V_MAX, 12);

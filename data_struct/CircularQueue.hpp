@@ -16,8 +16,8 @@ public:
 
     void enqueue(const T& value) {
         if ((rear + 1) % capacity == front) {
-            // Queue is full
-            std::cout << name << "Queue is full. Cannot enqueue." << std::endl;
+            // // Queue is full
+            // std::cout << name << "Queue is full. Cannot enqueue." << std::endl;
             return;
         }
         arr[rear] = value;

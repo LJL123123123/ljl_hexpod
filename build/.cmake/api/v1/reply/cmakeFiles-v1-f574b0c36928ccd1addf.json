@@ -1553,8 +1553,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/home/ljl/ljl_hexpod/build",
-		"source" : "/home/ljl/ljl_hexpod"
+		"build" : "/home/ljl/test/ljl_hexpod/build",
+		"source" : "/home/ljl/test/ljl_hexpod"
 	},
 	"version" : 
 	{

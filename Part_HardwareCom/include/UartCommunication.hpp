@@ -7,6 +7,12 @@
 #include <shared_mutex>
 #include <mutex>
 #include <iomanip>
+#include <linux/can.h>
+#include <linux/can/raw.h>
+#include <sys/socket.h>
+#include <net/if.h>
+#include <unistd.h>
+#include <cstring>
 
 class copy_solver
 {
@@ -55,11 +61,12 @@ class UartCom : public PeriodicTask{
         void cleanup() override;
 
         //通用接口
-        void com_init();
+        bool com_init();
         int uart_write(int fd,const char *w_buf,size_t len);
         ssize_t safe_write(int fd, const char *vptr, size_t n);
 
         void read_line(int fd);
+        void readCANLoop();
 
         int uart_set(int fd, int speed);
         int uart_open(int fd,const char *padthname);
@@ -91,6 +98,9 @@ class UartCom : public PeriodicTask{
         std::shared_mutex send_quene_mutex;
     private:
         //串口特征
+        std::thread canReadThread;
+        std::atomic<bool> stopCanRead{false};
+        int s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
         int fd;
         const char* uartname;
         int baudrate;

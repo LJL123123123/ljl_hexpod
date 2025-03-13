@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ljl/ljl_hexpod/build"
+			"value" : "/home/ljl/test/ljl_hexpod/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -547,7 +547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/build/CMakeFiles/pkgRedirects"
+			"value" : "/home/ljl/test/ljl_hexpod/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -619,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/ljl/ljl_hexpod"
+			"value" : "/home/ljl/test/ljl_hexpod"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1523,7 +1523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/build/Part_HardwareCom"
+			"value" : "/home/ljl/test/ljl_hexpod/build/Part_HardwareCom"
 		},
 		{
 			"name" : "HardwareCom_IS_TOP_LEVEL",
@@ -1547,7 +1547,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/Part_HardwareCom"
+			"value" : "/home/ljl/test/ljl_hexpod/Part_HardwareCom"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
@@ -2203,7 +2203,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/build/Part_Period"
+			"value" : "/home/ljl/test/ljl_hexpod/build/Part_Period"
 		},
 		{
 			"name" : "Period_IS_TOP_LEVEL",
@@ -2227,7 +2227,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/Part_Period"
+			"value" : "/home/ljl/test/ljl_hexpod/Part_Period"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -6715,7 +6715,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/build/Part_Robotrunner"
+			"value" : "/home/ljl/test/ljl_hexpod/build/Part_Robotrunner"
 		},
 		{
 			"name" : "Robotrunner_IS_TOP_LEVEL",
@@ -6739,7 +6739,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/Part_Robotrunner"
+			"value" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6911,7 +6911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod/build"
+			"value" : "/home/ljl/test/ljl_hexpod/build"
 		},
 		{
 			"name" : "code_struct_IS_TOP_LEVEL",
@@ -6935,7 +6935,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/ljl/ljl_hexpod"
+			"value" : "/home/ljl/test/ljl_hexpod"
 		},
 		{
 			"name" : "libevdev_CFLAGS",

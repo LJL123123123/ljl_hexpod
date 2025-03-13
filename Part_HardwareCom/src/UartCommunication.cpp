@@ -13,12 +13,10 @@
 #include <asm/termbits.h>
 #include <string.h>
 
-#include <linux/can.h>
-#include <linux/can/raw.h>
-#include <sys/socket.h>
-#include <net/if.h>
-#include <unistd.h>
-#include <cstring>
+#include <thread>
+#include <atomic>
+
+
 
 template <>
 void CircularQueue<uint8_t>::printcontent() const {
@@ -79,53 +77,76 @@ void UartCom::run()
             frame.can_id = canid;
             frame.can_dlc = can_data.size();
             std::copy(can_data.begin(), can_data.end(), frame.data);
-            frame.data[can_data.size()] = checksum;
-
-            int s = socket(PF_CAN, SOCK_RAW, CAN_RAW);
-            if (s < 0) {
-                perror("Socket");
-                return;
-            }
-
-            struct ifreq ifr;
-            strcpy(ifr.ifr_name, uartname);
-            ioctl(s, SIOCGIFINDEX, &ifr);
-
-            struct sockaddr_can addr;
-            addr.can_family = AF_CAN;
-            addr.can_ifindex = ifr.ifr_ifindex;
-
-            if (bind(s, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
-                perror("Bind");
-                close(s);
-                return;
-            }
-
+            // frame.data[can_data.size()] = checksum;
             if (write(s, &frame, sizeof(frame)) != sizeof(frame)) {
+                if(errno == ENOBUFS) {
+                    // 缓冲区满,等待一段时间
+                    usleep(1000);
+                    continue;
+                }
                 perror("Write");
             }
-
-            close(s);
-
-            const char* char_data = reinterpret_cast<const char*>(Send_msg.msg_content.data());  // 获取数据
-            // if(uart_write(fd, char_data, Send_msg.msg_content.size()) > 0)
+            // else
             // {
-                ++m_packet_send_all;
-            // }  // 写入数据
+            //     fprintf(stderr,"can send success\n");
+            // }
+            struct can_frame read_frame;
+            // int n;
+            // n  = read(s, &read_frame, sizeof(read_frame));
+            
+            // if (ret < 0)
+            // {
+            //     if (errno == EAGAIN || errno == EWOULDBLOCK)
+            //     {
+            //         // 没有可读数据，继续发送
+            //     }
+            //     else if (errno == ENOBUFS)
+            //     {
+            //         usleep(1000);
+            //         continue;
+            //     }
+            //     else
+            //     {
+            //         perror("Read");
+            //     }
+            // }
+            // else if (ret == sizeof(read_frame))
+            // {
+            //     // 正常读到一帧
+            //     // 可在此处添加读取后处理逻辑
+            // }
+
+            ++m_packet_send_all;
+
         }
     }
-    read_line(fd);
+    // read_line(s);
 }
 
 void UartCom::init()
 {
     Change_uart_priority();
-    com_init();
+    if(!com_init()) {
+        fprintf(stderr, "com_init failed.\n");
+        return; 
+    }
+
+    // 设置非阻塞
+    int flags = fcntl(s, F_GETFL, 0);
+    fcntl(s, F_SETFL, flags | O_NONBLOCK);
+
+    stopCanRead.store(false);
+    canReadThread = std::thread(&UartCom::readCANLoop, this);
 }
 
 void UartCom::cleanup()
 {
-    close(fd);
+    stopCanRead.store(true);
+    if (canReadThread.joinable()) {
+        canReadThread.join();
+    }
+
+    close(s);
 }
 
 bool UartCom::Change_uart_priority()
@@ -145,19 +166,32 @@ bool UartCom::Change_uart_priority()
     return false;
 }
 
-void UartCom::com_init()
+bool UartCom::com_init()
 {
-    fd = uart_open(fd,uartname);
-    if(fd == -1)
-    {
-        fprintf(stderr,"uart_open error\n");
-        exit(EXIT_FAILURE);
+    if (s < 0) {
+        perror("Socket");
+        return false;
     }
-    if(uart_set(fd,baudrate) == -1)
-    {
-        fprintf(stderr,"uart set failed!\n");
-        exit(EXIT_FAILURE);
+
+    struct ifreq ifr;
+    strcpy(ifr.ifr_name, uartname);
+    if (ioctl(s, SIOCGIFINDEX, &ifr) < 0) {
+        perror("IOCTL");
+        close(s);
+        return false;
     }
+
+    struct sockaddr_can addr;
+    addr.can_family = AF_CAN;
+    addr.can_ifindex = ifr.ifr_ifindex;
+
+    if (bind(s, (struct sockaddr *)&addr, sizeof(addr)) < 0) {
+        perror("Bind");
+        close(s);
+        return false;
+    }
+    return true;
+    
 }
 
 void UartCom::read_line(int fd)
@@ -178,7 +212,8 @@ void UartCom::read_line(int fd)
         }
 
         // 从串口读取数据
-        n = read(fd, buffer + total_read, buf_size - total_read);
+        struct can_frame read_frame;
+        n = read(s, &read_frame, sizeof(read_frame));
         total_read += n;
     } while (n > 0);
     
@@ -188,7 +223,7 @@ void UartCom::read_line(int fd)
     }
     
     uint32_t total_read_num = ssize_t_to_uint32_t(total_read);
-    //把数据压入循环队列
+    // 把数据压入循环队列
     if(total_read_num > 0)
     {
         m_recieve_buffer.enqueue(buffer,total_read_num);
@@ -250,47 +285,57 @@ int UartCom::uart_open(int fd,const char *pathname){
 
 //设置自定义波特率接口
 int UartCom::uart_set(int fd, int speed) {
-//   struct termios2 tty;
-//   //使用 ioctl 系统调用获取当前串行端口的设置，
-//   //并存储到 tty 结构体中。
-//   //TCGETS2 是一个标志，表示获取 termios2 结构体。
-//   ioctl(fd, TCGETS2, &tty);
-//   //清除 c_cflag 中的波特率标志（CBAUD），
-//   //然后设置为允许自定义波特率（BOTHER）。
-//   tty.c_cflag &= ~CBAUD;
-//   tty.c_cflag |= BOTHER;
-//   //清零对应数据位并重新设置为8位
-//   tty.c_cflag = (tty.c_cflag & ~CSIZE) | CS8;  
 
-//   //设置输入和输出的波特率为 speed
-//   tty.c_ispeed = speed;
-//   tty.c_ospeed = speed;
-
-//   //禁用 IGNBRK 标志，以便在波特率不匹配时不忽略断点符（break characters）
-//   tty.c_iflag &= ~IGNBRK; 
-//   //清除 c_lflag，禁用所有本地模式标志（无信号字符，无回显，无规范处理）
-//   tty.c_lflag = 0;     
-//   //清除 c_oflag，禁用所有输出模式标志（无重新映射，无延迟）
-//   tty.c_oflag = 0;      
-//   //设置控制字符数组中的 VMIN 为0，表示读取时不阻塞；
-//   //VTIME 为1，表示读取超时时间为0秒。有数据就返回，没数据就返回0
-//   tty.c_cc[VMIN] = 0;   
-//   tty.c_cc[VTIME] = 0;  
-//   //禁用软件流控制（IXON、IXOFF、IXANY）
-//   tty.c_iflag &= ~(IXON | IXOFF | IXANY);  
-
-//   //设置 c_cflag，忽略调制解调器控制线（CLOCAL），并启用接收器（CREAD）
-//   tty.c_cflag |= (CLOCAL | CREAD); 
-//   //关闭奇偶校验（PARENB），并且清除任何奇偶校验类型设置（PARODD）
-//   //设置为一位停止位（清除 CSTOPB）
-//   //禁用硬件流控制（清除 CRTSCTS）
-//   tty.c_cflag &= ~(PARENB | PARODD);     
-//   tty.c_cflag &= ~CSTOPB;
-//   tty.c_cflag &= ~CRTSCTS;
-//   // cfmakeraw(&tty);
-
-//   //使用 ioctl 系统调用将配置的设置应用到串行端口,同上
-//   ioctl(fd, TCSETS2, &tty);
   return 0;
+}
+
+// 新增：循环读取线程
+void UartCom::readCANLoop()
+{
+    while (!stopCanRead.load())
+    {
+        struct can_frame rframe;
+        int ret = read(s, &rframe, sizeof(rframe));
+        if (ret > 0)
+        {
+            // 处理读到的一帧
+            // std::cout << "Received CAN ID: 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.can_id) << std::endl;
+            // std::cout << "Received CAN Data: ";
+            // for (int i = 0; i < rframe.can_dlc; ++i) {
+            //     std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.data[i]) << " ";
+            // }
+            // std::cout << std::endl;
+            Msg recv_msg;
+            recv_msg.msg_content.resize(17);
+            recv_msg.msg_content[0] = 0xAA;
+            recv_msg.msg_content[1] = 0x11;
+            recv_msg.msg_content[2] = 0x08;
+            recv_msg.msg_content[3] = 0x00;
+            recv_msg.msg_content[4] = 0x00;
+            recv_msg.msg_content[5] = 0x00;
+            recv_msg.msg_content[6] = 0x00;
+            recv_msg.msg_content[7] = 0x00;
+            recv_msg.msg_content[8] = rframe.can_id;
+            for (int i = 0; i < rframe.can_dlc; ++i) {
+                recv_msg.msg_content[9 + i] = rframe.data[i];
+            }
+            recv_msg.msg_content[16] = 0x55;
+            m_recieve_buffer.enqueue(recv_msg.msg_content.data(), 1);
+            data_num+=1;
+        }
+        else if (ret < 0)
+        {
+            if (errno == EAGAIN || errno == EWOULDBLOCK)
+            {
+                // 暂无可读数据
+            }
+            else
+            {
+                perror("read");
+            }
+        }
+        // 避免空转
+        usleep(1000);
+    }
 }
 

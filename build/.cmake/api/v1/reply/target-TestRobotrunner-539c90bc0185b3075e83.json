@@ -104,27 +104,27 @@
 			[
 				{
 					"backtrace" : 6,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/../Part_HardwareCom/include"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/../Part_HardwareCom/include"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/../Part_Period/include"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/../Part_Period/include"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/../data_struct"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/../data_struct"
 				},
 				{
 					"backtrace" : 9,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/./include"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/./include"
 				},
 				{
 					"backtrace" : 10,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/../HardwareCom/include"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/../HardwareCom/include"
 				},
 				{
 					"backtrace" : 11,
-					"path" : "/home/ljl/ljl_hexpod/Part_Robotrunner/../Period/include"
+					"path" : "/home/ljl/test/ljl_hexpod/Part_Robotrunner/../Period/include"
 				}
 			],
 			"language" : "CXX",
@@ -167,22 +167,22 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/home/ljl/ljl_hexpod/lib",
+				"fragment" : "-Wl,-rpath,/home/ljl/test/ljl_hexpod/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/ljl/ljl_hexpod/lib/libRobotrunner.so",
+				"fragment" : "/home/ljl/test/ljl_hexpod/lib/libRobotrunner.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/home/ljl/ljl_hexpod/lib/libHardwareCom.so",
+				"fragment" : "/home/ljl/test/ljl_hexpod/lib/libHardwareCom.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/home/ljl/ljl_hexpod/lib/libPeriod.so",
+				"fragment" : "/home/ljl/test/ljl_hexpod/lib/libPeriod.so",
 				"role" : "libraries"
 			},
 			{

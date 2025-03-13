@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     PeriodicTaskManager::Instance();
 
     DM_USB2CAN test = DM_USB2CAN("DM_USB2CAN1",100,0.001,921600,"can1",128,1024,8);
-    DM_USB2CAN test1 = DM_USB2CAN("DM_USB2CAN2",100,0.001,921600,"can0",128,1024,8);
+    DM_USB2CAN test1 = DM_USB2CAN("DM_USB2CAN2",100,0.001,921600,"can2",128,1024,8);
     test.start();
     test1.start();
 
@@ -77,12 +77,12 @@ int main(int argc, char *argv[])
                 double key = QTime::currentTime().msecsSinceStartOfDay() / 1000.0;
                 newData.append(key);
                 
-                // newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
-                // newData.append(Project.m_hexpodController.m_LegMotor[4].feedback_pos);
-                // newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
-                // newData.append(Project.m_hexpodController.m_LegMotor[3].control_p_des);
-                // newData.append(Project.m_hexpodController.m_LegMotor[4].control_p_des);
-                // newData.append(Project.m_hexpodController.m_LegMotor[5].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
+                newData.append(Project.m_hexpodController.m_LegMotor[3].feedback_pos);
+                newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
+                // newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
+                // newData.append(Project.m_hexpodController.m_LegMotor[1].control_p_des);
+                // newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].control_v_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].control_v_des);                

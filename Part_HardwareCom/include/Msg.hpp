@@ -12,7 +12,7 @@ public:
     for (const auto& byte : msg_content) {
         std::cout << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(byte) << " ";
     }
-    std::cout << std::dec << std::endl; // 恢复为十进制格式
+    // std::cout << std::dec << std::endl; // 恢复为十进制格式
 }
 };
 #endif

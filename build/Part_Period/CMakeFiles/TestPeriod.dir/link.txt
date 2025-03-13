@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/TestPeriod.dir/test/test.cpp.o -o ../bin/TestPeriod  -Wl,-rpath,/home/ljl/test/ljl_hexpod/lib /home/ljl/test/ljl_hexpod/lib/libPeriod.so -lpthread 

@@ -29,7 +29,7 @@ void CircularQueue<uint8_t>::printcontent() const {
         std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(arr[index]) << " ";
         index = (index + 1) % capacity;
     }
-    std::cout << std::endl;
+    // std::cout << std::endl;
 }
 
 int64_t time_sample_Uartcommunication = 0; 
@@ -295,43 +295,27 @@ void UartCom::readCANLoop()
     while (!stopCanRead.load())
     {
         struct can_frame rframe;
-        int ret = read(s, &rframe, sizeof(rframe));
-
-        std::cout << "Received CAN ID: 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.can_id) << std::endl;
-        std::cout << "Received CAN Data: ";
-        for (int i = 0; i < rframe.can_dlc; ++i) {
-            std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.data[i]) << " ";
-        }
-        std::cout << std::endl;
+        int ret = read(s, &rframe, sizeof(rframe));        
 
         if (ret > 0)
         {
             // 处理读到的一帧
-            // std::cout << "Received CAN ID: 0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.can_id) << std::endl;
-            // std::cout << "Received CAN Data: ";
-            // for (int i = 0; i < rframe.can_dlc; ++i) {
-            //     std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(rframe.data[i]) << " ";
-            // }
-            // std::cout << std::endl;
+            
             Msg recv_msg;
             recv_msg.msg_content.resize(16);
             recv_msg.msg_content[0] = 0xAA;
-            recv_msg.msg_content[1] = 0x02;
+            recv_msg.msg_content[1] = 0x11;
             recv_msg.msg_content[2] = 0x08;
-            recv_msg.msg_content[3] = rframe.data[0];
+            recv_msg.msg_content[3] = rframe.can_id;
             recv_msg.msg_content[4] = 0x00;
             recv_msg.msg_content[5] = 0x00;
             recv_msg.msg_content[6] = 0x00;
-            recv_msg.msg_content[7] = 0x00;
-            for (int i = 1; i < rframe.can_dlc; ++i) {
-                recv_msg.msg_content[8 + i -1] = rframe.data[i];
+            for (int i = 0; i < rframe.can_dlc; ++i) {
+                recv_msg.msg_content[7 + i] = rframe.data[i];
             }
             recv_msg.msg_content[15] = 0x55;
-            std::cout << "Received Message Content: ";
-            for (const auto& byte : recv_msg.msg_content) {
-                std::cout << "0x" << std::hex << std::setw(2) << std::setfill('0') << static_cast<int>(byte) << " ";
-            }
-            std::cout << std::endl;
+            
+            // std::cout << std::endl;
             m_recieve_buffer.enqueue(recv_msg.msg_content.data(), recv_msg.msg_content.size());
             data_num+=1;
         }

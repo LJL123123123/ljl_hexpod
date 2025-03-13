@@ -78,9 +78,9 @@ int main(int argc, char *argv[])
                 newData.append(key);
                 
                 newData.append(Project.m_hexpodController.m_LegMotor[0].feedback_pos);
-                newData.append(Project.m_hexpodController.m_LegMotor[3].feedback_pos);
+                // newData.append(Project.m_hexpodController.m_LegMotor[3].feedback_pos);
                 newData.append(Project.m_hexpodController.m_LegMotor[2].feedback_pos);                
-                // newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
+                newData.append(Project.m_hexpodController.m_LegMotor[0].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[1].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[2].control_p_des);
                 // newData.append(Project.m_hexpodController.m_LegMotor[0].control_v_des);
@@ -111,7 +111,7 @@ int main(int argc, char *argv[])
             {
                 // Project.m_hexpodController.m_LegMotor =                 
                 Project.m_hexpodController.hex_state = Project.m_hexpodController.FORWARD;
-                std::cout << "hex_state"<<Project.m_hexpodController.hex_state<< std::endl;
+                // std::cout << "hex_state"<<Project.m_hexpodController.hex_state<< std::endl;
             }
             else if(reader.isKeyPressed(reader.getKeyCode("S")))
             {

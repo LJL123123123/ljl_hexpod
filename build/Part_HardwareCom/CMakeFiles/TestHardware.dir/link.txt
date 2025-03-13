@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/TestHardware.dir/test/test.cpp.o -o ../bin/TestHardware  -Wl,-rpath,/home/ljl/test/ljl_hexpod/lib /home/ljl/test/ljl_hexpod/lib/libHardwareCom.so /home/ljl/test/ljl_hexpod/lib/libPeriod.so -lpthread 

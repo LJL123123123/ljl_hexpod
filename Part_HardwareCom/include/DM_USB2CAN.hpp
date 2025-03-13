@@ -56,13 +56,13 @@ public:
         content_ptr->crc = 0x88;
     }
 
-    void printHexContent() const {
-        // Print the content in hexadecimal format
-        for (const auto& byte : msg_content) {
-            std::cout << std::hex << static_cast<int>(byte) << " ";
-        }
-        std::cout << std::endl;
-    }
+    // void printHexContent() const {
+    //     // Print the content in hexadecimal format
+    //     for (const auto& byte : msg_content) {
+    //         std::cout << std::hex << static_cast<int>(byte) << " ";
+    //     }
+    //     std::cout << std::endl;
+    // }
 };
 
 struct can_msg

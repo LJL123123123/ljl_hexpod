@@ -1,0 +1,55 @@
+{
+    "configurations": [
+        {
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/include/x86_64-linux-gnu/qt6"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:\\Program Files\\mingw64\\bin\\gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "windows-gcc-x64"
+=======
+            "name": "Linux",
+            "includePath": [
+                "/usr/include",
+                "/usr/local/include",
+                "${workspaceFolder}/",
+                "${workspaceFolder}/Part_Period/include",
+                "${workspaceFolder}/Part_HardwareCom/include",
+                "${workspaceFolder}/Part_Robotrunner/include",
+                "${workspaceFolder}/QT",
+                "${workspaceFolder}/data_struct",
+                "/home/roma/APP/QT/6.2.4/gcc_64/include"
+            ],
+=======
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Period/include",
+                "${workspaceFolder}/HardwareCom/include",
+                "${workspaceFolder}/Robotrunner/include",
+                "${workspaceFolder}/data_struct"
+            ],
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
+<<<<<<< HEAD
+>>>>>>> 0cc1b9162101a5dafac33d584163817fbd581925
+=======
+>>>>>>> b1e1265 (所有功能基本完成且测试——2024/7/30)
+        }
+    ],
+    "version": 4
+}

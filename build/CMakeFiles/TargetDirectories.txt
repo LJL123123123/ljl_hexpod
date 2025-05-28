@@ -1,0 +1,15 @@
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/CMakeFiles/code_struct.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/CMakeFiles/edit_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/CMakeFiles/rebuild_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Period/CMakeFiles/Period.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Period/CMakeFiles/TestPeriod.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Period/CMakeFiles/edit_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Period/CMakeFiles/rebuild_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_HardwareCom/CMakeFiles/HardwareCom.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_HardwareCom/CMakeFiles/TestHardware.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_HardwareCom/CMakeFiles/edit_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_HardwareCom/CMakeFiles/rebuild_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Robotrunner/CMakeFiles/Robotrunner.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Robotrunner/CMakeFiles/TestRobotrunner.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Robotrunner/CMakeFiles/edit_cache.dir
+/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Robotrunner/CMakeFiles/rebuild_cache.dir

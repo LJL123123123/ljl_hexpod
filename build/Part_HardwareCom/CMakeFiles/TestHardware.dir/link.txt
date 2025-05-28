@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/TestHardware.dir/test/test.cpp.o -o ../bin/TestHardware  -Wl,-rpath,/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/lib /home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/lib/libHardwareCom.so /home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/lib/libPeriod.so -lpthread

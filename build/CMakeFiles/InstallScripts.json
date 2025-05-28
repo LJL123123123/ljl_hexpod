@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/cmake_install.cmake",
+		"/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Period/cmake_install.cmake",
+		"/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_HardwareCom/cmake_install.cmake",
+		"/home/roma/roma_code/ljl_hexpod-25.2.27-RasPi/build/Part_Robotrunner/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

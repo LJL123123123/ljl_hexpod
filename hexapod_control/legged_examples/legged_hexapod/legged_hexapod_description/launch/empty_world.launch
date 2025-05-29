@@ -1,0 +1,29 @@
+<launch>
+    <!-- <arg name="robot_type" default="$(env ROBOT_TYPE)" doc="Robot type: [elspider_air]"/> -->
+    <arg name="robot_type" default="elspider_air" doc="Robot type: [elspider_air]"/>
+
+    <param name="legged_robot_description" command="$(find xacro)/xacro $(find legged_hexapod_description)/urdf/robot.xacro
+       robot_type:=$(arg robot_type)
+    "/>
+    <node name="generate_urdf" pkg="legged_common" type="generate_urdf.sh" output="screen"
+          args="$(find legged_hexapod_description)/urdf/robot.xacro $(arg robot_type)"/>
+
+    <rosparam file="$(find legged_hexapod_description)/config/default.yaml" command="load"/>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find legged_gazebo)/worlds/empty_world.world"/>
+    </include>
+    <!-- push robot_description to factory and spawn robot in gazebo -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" clear_params="true"
+          args="-z 0.14 -param legged_robot_description -urdf -model $(arg robot_type)
+                  -J aRF_HAA 0.0 -J aRF_HFE -0.3490 -J aRF_KFE 0.349 
+                  -J bRM_HAA 0.0 -J bRM_HFE -0.3490 -J bRM_KFE 0.349 
+                  -J cRB_HAA 0.0 -J cRB_HFE -0.3490 -J cRB_KFE 0.349
+                  -J dLF_HAA 0.0 -J dLF_HFE -0.3490 -J dLF_KFE 0.349 
+                  -J eLM_HAA 0.0 -J eLM_HFE -0.3490 -J eLM_KFE 0.349 
+                  -J fLB_HAA 0.0 -J fLB_HFE -0.3490 -J fLB_KFE 0.349
+                  " output="screen"/>
+    <!-- Rviz -->
+    <node name="rviz" pkg="rviz" type="rviz"
+          args="-d $(find legged_hexapod_description)/rviz/default.rviz"/>
+
+</launch>
